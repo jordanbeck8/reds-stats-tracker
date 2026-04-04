@@ -1,0 +1,110 @@
+{
+  "bat_2026": [
+    {
+      "Name": "Dane Myers",
+      "bWAR": -0.15
+    },
+    {
+      "Name": "Elly De La Cruz",
+      "bWAR": 0.15
+    },
+    {
+      "Name": "Eugenio Su\u00c3\u00a1rez",
+      "bWAR": 0.0
+    },
+    {
+      "Name": "Jose Trevino",
+      "bWAR": -0.14
+    },
+    {
+      "Name": "Ke'Bryan Hayes",
+      "bWAR": 0.06
+    },
+    {
+      "Name": "Matt McLain",
+      "bWAR": -0.11
+    },
+    {
+      "Name": "Nathaniel Lowe",
+      "bWAR": -0.02
+    },
+    {
+      "Name": "Noelvi Marte",
+      "bWAR": -0.14
+    },
+    {
+      "Name": "Sal Stewart",
+      "bWAR": 0.59
+    },
+    {
+      "Name": "Spencer Steer",
+      "bWAR": -0.47
+    },
+    {
+      "Name": "TJ Friedl",
+      "bWAR": -0.4
+    },
+    {
+      "Name": "Tyler Stephenson",
+      "bWAR": -0.15
+    },
+    {
+      "Name": "Will Benson",
+      "bWAR": -0.13
+    }
+  ],
+  "pitch_2026": [
+    {
+      "Name": "Andrew Abbott",
+      "bWAR": 0.73
+    },
+    {
+      "Name": "Brady Singer",
+      "bWAR": 0.07
+    },
+    {
+      "Name": "Brandon Williamson",
+      "bWAR": -0.21
+    },
+    {
+      "Name": "Brock Burke",
+      "bWAR": 0.25
+    },
+    {
+      "Name": "Chase Burns",
+      "bWAR": 0.42
+    },
+    {
+      "Name": "Connor Phillips",
+      "bWAR": 0.37
+    },
+    {
+      "Name": "Emilio Pag\u00c3\u00a1n",
+      "bWAR": -0.44
+    },
+    {
+      "Name": "Graham Ashcraft",
+      "bWAR": 0.21
+    },
+    {
+      "Name": "Jose Franco",
+      "bWAR": 0.17
+    },
+    {
+      "Name": "Pierce Johnson",
+      "bWAR": -0.08
+    },
+    {
+      "Name": "Rhett Lowder",
+      "bWAR": 0.31
+    },
+    {
+      "Name": "Sam Moll",
+      "bWAR": 0.25
+    },
+    {
+      "Name": "Tony Santillan",
+      "bWAR": 0.32
+    }
+  ]
+}

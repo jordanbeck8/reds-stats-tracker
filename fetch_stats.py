@@ -5,10 +5,12 @@ Fetches hitting, pitching, and fielding statistics from FanGraphs (via pybasebal
 and Baseball-Reference, then writes formatted markdown tables to README.md.
 """
 
+import json
 import sys
 import unicodedata
 from datetime import datetime, timezone
 from io import StringIO
+from pathlib import Path
 
 import pandas as pd
 import pybaseball
@@ -26,6 +28,8 @@ _BROWSER_UA = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 )
+# bWAR cache — updated when BRef is reachable (local runs), read-only fallback on CI
+_BWAR_CACHE = Path(__file__).parent / "bwar_cache.json"
 
 
 def normalize_name(name: str) -> str:
@@ -49,41 +53,66 @@ def _fmt(series: pd.Series, spec: str, multiply: float = 1.0, suffix: str = "") 
 def _get_bwar(source: str, label: str, year: int) -> pd.DataFrame:
     """Fetch bWAR from Baseball-Reference for CIN in the given year.
 
-    Tries a direct HTTP request first (browser UA avoids BRef bot blocks),
-    then falls back to pybaseball's cached implementation.
+    Strategy:
+      1. Direct HTTP request with browser UA (BRef blocks default pybaseball UA).
+      2. pybaseball fallback.
+      3. If both fail (e.g. GitHub Actions IP blocks), load bwar_cache.json.
+    On success, writes result to bwar_cache.json so CI always has fresh data.
     """
-    pybaseball_func = pybaseball.bwar_bat if source == "bat" else pybaseball.bwar_pitch
+    cache_key = f"{source}_{year}"
 
     def _parse(df: pd.DataFrame) -> pd.DataFrame:
         required = {"year_ID", "team_ID", "name_common", "WAR"}
         if not required.issubset(df.columns):
-            raise ValueError(f"Missing columns — got: {df.columns.tolist()[:8]}")
+            raise ValueError(f"Unexpected columns: {df.columns.tolist()[:6]}")
         cin = df[(df["year_ID"] == year) & (df["team_ID"] == TEAM)].copy()
         cin = cin.groupby("name_common", as_index=False)["WAR"].sum()
         cin.columns = ["Name", "bWAR"]
         cin["name_key"] = cin["Name"].apply(normalize_name)
         return cin
 
+    def _cache_write(result: pd.DataFrame) -> None:
+        data = json.loads(_BWAR_CACHE.read_text()) if _BWAR_CACHE.exists() else {}
+        data[cache_key] = result[["Name", "bWAR"]].to_dict(orient="records")
+        _BWAR_CACHE.write_text(json.dumps(data, indent=2))
+
     print(f"  Fetching bWAR ({label}) from Baseball-Reference…")
 
     # Attempt 1: direct request with browser User-Agent
     try:
         resp = requests.get(
-            _BWAR_URLS[source],
-            headers={"User-Agent": _BROWSER_UA},
-            timeout=30,
+            _BWAR_URLS[source], headers={"User-Agent": _BROWSER_UA}, timeout=30
         )
         resp.raise_for_status()
-        return _parse(pd.read_csv(StringIO(resp.text)))
+        result = _parse(pd.read_csv(StringIO(resp.text)))
+        _cache_write(result)
+        return result
     except Exception as exc:
-        print(f"  bWAR direct fetch failed ({exc}), trying pybaseball fallback…")
+        print(f"  Direct fetch failed ({exc}), trying pybaseball…")
 
     # Attempt 2: pybaseball
+    pybaseball_func = pybaseball.bwar_bat if source == "bat" else pybaseball.bwar_pitch
     try:
-        return _parse(pybaseball_func(return_all=False))
+        result = _parse(pybaseball_func(return_all=False))
+        _cache_write(result)
+        return result
     except Exception as exc:
-        print(f"  Warning: bWAR ({label}) unavailable — {exc}")
-        return pd.DataFrame(columns=["Name", "bWAR", "name_key"])
+        print(f"  pybaseball failed ({exc}), loading cache…")
+
+    # Attempt 3: local cache (committed to repo, always available on CI)
+    if _BWAR_CACHE.exists():
+        try:
+            data = json.loads(_BWAR_CACHE.read_text())
+            if cache_key in data:
+                print(f"  Using cached bWAR ({label}) — live fetch unavailable.")
+                df = pd.DataFrame(data[cache_key])
+                df["name_key"] = df["Name"].apply(normalize_name)
+                return df
+        except Exception:
+            pass
+
+    print(f"  Warning: bWAR ({label}) unavailable — no live data or cache.")
+    return pd.DataFrame(columns=["Name", "bWAR", "name_key"])
 
 
 def _merge_bwar(df: pd.DataFrame, bwar: pd.DataFrame) -> pd.DataFrame:
