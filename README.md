@@ -1,6 +1,6 @@
 # 🔴 Cincinnati Reds Stats Tracker — 2026
 
-> **Last updated:** 2026-04-04 05:41 UTC
+> **Last updated:** 2026-04-04 05:46 UTC
 > Data sources: [FanGraphs](https://www.fangraphs.com) · [Baseball-Reference](https://www.baseball-reference.com)
 > **fWAR** = FanGraphs WAR · **bWAR** = Baseball-Reference WAR
 
@@ -57,36 +57,23 @@
 | Name | Pos | G | GS | Inn | PO | A | E | FP | DRS | UZR | UZR/150 | OAA |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Ke'Bryan Hayes | 3B | 6 | 5 | 47.0 | 3 | 13 | 0 | 1.000 | 1.0 | - | - | 2.0 |
-| Spencer Steer | LF | 4 | 4 | 31.0 | 4 | 0 | 0 | 1.000 | 0.0 | - | - | 0.0 |
 | Elly De La Cruz | SS | 6 | 6 | 56.0 | 10 | 10 | 0 | 1.000 | 0.0 | - | - | 0.0 |
+| Tyler Stephenson | C | 5 | 4 | 37.0 | 35 | 2 | 0 | 1.000 | 0.0 | - | - | - |
+| Spencer Steer | LF | 4 | 4 | 31.0 | 4 | 0 | 0 | 1.000 | 0.0 | - | - | 0.0 |
 | Eugenio Suarez | 3B | 1 | 1 | 8.0 | 0 | 2 | 0 | 1.000 | 0.0 | - | - | 0.0 |
 | Noelvi Marte | RF | 4 | 3 | 27.0 | 5 | 0 | 0 | 1.000 | 0.0 | - | - | 0.0 |
 | Will Benson | LF | 1 | 1 | 6.0 | 0 | 0 | 0 | 0.000 | 0.0 | - | - | 0.0 |
 | TJ Friedl | LF | 5 | 1 | 19.0 | 6 | 0 | 0 | 1.000 | 0.0 | - | - | 0.0 |
-| Spencer Steer | 1B | 3 | 1 | 12.0 | 9 | 0 | 0 | 1.000 | 0.0 | - | - | 0.0 |
-| Tyler Stephenson | C | 5 | 4 | 37.0 | 35 | 2 | 0 | 1.000 | 0.0 | - | - | - |
 | Spencer Steer | 3B | 1 | 0 | 1.0 | 0 | 0 | 0 | 0.000 | 0.0 | - | - | - |
 | Nathaniel Lowe | 1B | 1 | 0 | 1.0 | 0 | 0 | 0 | 0.000 | 0.0 | - | - | - |
-| Emilio Pagan | P | 3 | 0 | 3.1 | 0 | 0 | 0 | 0.000 | 0.0 | - | - | - |
-| Sam Moll | P | 3 | 0 | 3.0 | 0 | 0 | 0 | 0.000 | 0.0 | - | - | - |
-| Brock Burke | P | 3 | 0 | 4.0 | 0 | 0 | 0 | 0.000 | 0.0 | - | - | - |
-| Pierce Johnson | P | 4 | 0 | 2.2 | 0 | 0 | 0 | 0.000 | 0.0 | - | - | - |
-| Connor Phillips | P | 4 | 0 | 4.0 | 0 | 0 | 0 | 0.000 | 0.0 | - | - | - |
-| Andrew Abbott | P | 2 | 2 | 11.2 | 0 | 0 | 0 | 0.000 | 0.0 | - | - | - |
-| Rhett Lowder | P | 1 | 1 | 5.0 | 0 | 1 | 0 | 1.000 | 0.0 | - | - | - |
-| Graham Ashcraft | P | 4 | 0 | 4.0 | 0 | 0 | 0 | 0.000 | 0.0 | - | - | - |
-| Tony Santillan | P | 3 | 0 | 3.0 | 0 | 1 | 0 | 1.000 | 0.0 | - | - | - |
-| Jose Franco | P | 1 | 0 | 1.2 | 0 | 0 | 0 | 0.000 | 0.0 | - | - | - |
-| Brandon Williamson | P | 1 | 1 | 4.2 | 0 | 0 | 0 | 0.000 | 0.0 | - | - | - |
-| Brady Singer | P | 1 | 1 | 4.0 | 1 | 0 | 0 | 1.000 | 0.0 | - | - | - |
-| Chase Burns | P | 1 | 1 | 5.0 | 0 | 1 | 0 | 1.000 | 0.0 | - | - | - |
-| Spencer Steer | RF | 1 | 0 | 3.0 | 1 | 0 | 0 | 1.000 | -1.0 | - | - | 0.0 |
-| Matt McLain | 2B | 6 | 6 | 56.0 | 11 | 21 | 0 | 1.000 | -1.0 | - | - | 1.0 |
+| Spencer Steer | 1B | 3 | 1 | 12.0 | 9 | 0 | 0 | 1.000 | 0.0 | - | - | 0.0 |
 | Jose Trevino | C | 2 | 2 | 19.0 | 21 | 0 | 0 | 1.000 | -1.0 | - | - | - |
+| Matt McLain | 2B | 6 | 6 | 56.0 | 11 | 21 | 0 | 1.000 | -1.0 | - | - | 1.0 |
+| Spencer Steer | RF | 1 | 0 | 3.0 | 1 | 0 | 0 | 1.000 | -1.0 | - | - | 0.0 |
 | Will Benson | RF | 4 | 3 | 26.0 | 6 | 0 | 0 | 1.000 | -1.0 | - | - | -1.0 |
 | Sal Stewart | 1B | 5 | 5 | 43.0 | 40 | 3 | 0 | 1.000 | -1.0 | - | - | -1.0 |
-| Dane Myers | CF | 5 | 1 | 19.0 | 7 | 0 | 0 | 1.000 | -2.0 | - | - | -1.0 |
 | TJ Friedl | CF | 5 | 5 | 37.0 | 9 | 0 | 0 | 1.000 | -2.0 | - | - | -1.0 |
+| Dane Myers | CF | 5 | 1 | 19.0 | 7 | 0 | 0 | 1.000 | -2.0 | - | - | -1.0 |
 
 ---
 

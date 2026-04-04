@@ -190,6 +190,8 @@ def get_fielding_stats(year: int) -> pd.DataFrame:
     raw = pybaseball.fielding_stats(year, qual=0)
     reds = raw[raw["Team"] == TEAM].copy()
 
+    reds = reds[reds["Pos"] != "P"].copy()
+
     preferred = ["Name", "Pos", "G", "GS", "Inn", "PO", "A", "E",
                  "FP", "DRS", "UZR", "UZR/150", "OAA"]
     reds = reds[[c for c in preferred if c in reds.columns]].copy()
