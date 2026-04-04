@@ -8,12 +8,24 @@ and Baseball-Reference, then writes formatted markdown tables to README.md.
 import sys
 import unicodedata
 from datetime import datetime, timezone
+from io import StringIO
 
 import pandas as pd
 import pybaseball
+import requests
 
 TEAM = "CIN"
 YEAR = datetime.now().year
+
+# BRef raw CSV endpoints — programmatic access intended by BRef
+_BWAR_URLS = {
+    "bat":   "https://www.baseball-reference.com/data/war_daily_bat.txt",
+    "pitch": "https://www.baseball-reference.com/data/war_daily_pitch.txt",
+}
+_BROWSER_UA = (
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+)
 
 
 def normalize_name(name: str) -> str:
@@ -34,16 +46,41 @@ def _fmt(series: pd.Series, spec: str, multiply: float = 1.0, suffix: str = "") 
     )
 
 
-def _get_bwar(pybaseball_func, label: str, year: int) -> pd.DataFrame:
-    """Fetch bWAR from Baseball-Reference, filtered to CIN for the given year."""
-    try:
-        print(f"  Fetching bWAR ({label}) from Baseball-Reference…")
-        df = pybaseball_func(return_all=False)
+def _get_bwar(source: str, label: str, year: int) -> pd.DataFrame:
+    """Fetch bWAR from Baseball-Reference for CIN in the given year.
+
+    Tries a direct HTTP request first (browser UA avoids BRef bot blocks),
+    then falls back to pybaseball's cached implementation.
+    """
+    pybaseball_func = pybaseball.bwar_bat if source == "bat" else pybaseball.bwar_pitch
+
+    def _parse(df: pd.DataFrame) -> pd.DataFrame:
+        required = {"year_ID", "team_ID", "name_common", "WAR"}
+        if not required.issubset(df.columns):
+            raise ValueError(f"Missing columns — got: {df.columns.tolist()[:8]}")
         cin = df[(df["year_ID"] == year) & (df["team_ID"] == TEAM)].copy()
         cin = cin.groupby("name_common", as_index=False)["WAR"].sum()
         cin.columns = ["Name", "bWAR"]
         cin["name_key"] = cin["Name"].apply(normalize_name)
         return cin
+
+    print(f"  Fetching bWAR ({label}) from Baseball-Reference…")
+
+    # Attempt 1: direct request with browser User-Agent
+    try:
+        resp = requests.get(
+            _BWAR_URLS[source],
+            headers={"User-Agent": _BROWSER_UA},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        return _parse(pd.read_csv(StringIO(resp.text)))
+    except Exception as exc:
+        print(f"  bWAR direct fetch failed ({exc}), trying pybaseball fallback…")
+
+    # Attempt 2: pybaseball
+    try:
+        return _parse(pybaseball_func(return_all=False))
     except Exception as exc:
         print(f"  Warning: bWAR ({label}) unavailable — {exc}")
         return pd.DataFrame(columns=["Name", "bWAR", "name_key"])
@@ -75,7 +112,7 @@ def get_hitting_stats(year: int) -> pd.DataFrame:
     reds = reds[reds["PA"] > 0]
     reds.rename(columns={"WAR": "fWAR"}, inplace=True)
 
-    bwar = _get_bwar(pybaseball.bwar_bat, "hitting", year)
+    bwar = _get_bwar("bat", "hitting", year)
     reds = _merge_bwar(reds, bwar)
     reds.sort_values("fWAR", ascending=False, inplace=True)
 
@@ -102,7 +139,7 @@ def get_pitching_stats(year: int) -> pd.DataFrame:
     reds = reds[[c for c in cols if c in reds.columns]].copy()
     reds.rename(columns={"WAR": "fWAR"}, inplace=True)
 
-    bwar = _get_bwar(pybaseball.bwar_pitch, "pitching", year)
+    bwar = _get_bwar("pitch", "pitching", year)
     reds = _merge_bwar(reds, bwar)
     reds.sort_values("fWAR", ascending=False, inplace=True)
 
