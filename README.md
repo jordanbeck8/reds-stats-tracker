@@ -1,6 +1,6 @@
 # 🔴 Cincinnati Reds Stats Tracker — 2026
 
-> **Last updated:** 2026-04-09 14:54 UTC
+> **Last updated:** 2026-04-10 14:16 UTC
 > Data sources: [FanGraphs](https://www.fangraphs.com) · [Baseball-Reference](https://www.baseball-reference.com)
 > **fWAR** = FanGraphs WAR · **bWAR** = Baseball-Reference WAR
 
