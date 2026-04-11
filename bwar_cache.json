@@ -2,35 +2,35 @@
   "bat_2026": [
     {
       "Name": "Dane Myers",
-      "bWAR": -0.08
+      "bWAR": -0.29
     },
     {
       "Name": "Elly De La Cruz",
-      "bWAR": 0.48
+      "bWAR": 0.64
     },
     {
       "Name": "Eugenio Su\u00e1rez",
-      "bWAR": -0.1
-    },
-    {
-      "Name": "Jose Trevino",
-      "bWAR": -0.25
-    },
-    {
-      "Name": "Ke'Bryan Hayes",
-      "bWAR": -0.06
-    },
-    {
-      "Name": "Matt McLain",
-      "bWAR": -0.05
-    },
-    {
-      "Name": "Nathaniel Lowe",
       "bWAR": -0.12
     },
     {
+      "Name": "Jose Trevino",
+      "bWAR": -0.24
+    },
+    {
+      "Name": "Ke'Bryan Hayes",
+      "bWAR": -0.1
+    },
+    {
+      "Name": "Matt McLain",
+      "bWAR": -0.24
+    },
+    {
+      "Name": "Nathaniel Lowe",
+      "bWAR": -0.13
+    },
+    {
       "Name": "Noelvi Marte",
-      "bWAR": -0.25
+      "bWAR": -0.27
     },
     {
       "Name": "P.J. Higgins",
@@ -38,77 +38,85 @@
     },
     {
       "Name": "Sal Stewart",
-      "bWAR": 0.95
+      "bWAR": 0.92
     },
     {
       "Name": "Spencer Steer",
-      "bWAR": -0.34
+      "bWAR": -0.43
     },
     {
       "Name": "TJ Friedl",
-      "bWAR": -0.38
+      "bWAR": -0.55
     },
     {
       "Name": "Tyler Stephenson",
-      "bWAR": -0.1
+      "bWAR": 0.06
     },
     {
       "Name": "Will Benson",
-      "bWAR": -0.17
+      "bWAR": -0.18
     }
   ],
   "pitch_2026": [
     {
       "Name": "Andrew Abbott",
-      "bWAR": 0.6
+      "bWAR": 0.74
     },
     {
       "Name": "Brady Singer",
-      "bWAR": -0.32
+      "bWAR": -0.26
     },
     {
       "Name": "Brandon Williamson",
-      "bWAR": 0.09
-    },
-    {
-      "Name": "Brock Burke",
-      "bWAR": 0.4
-    },
-    {
-      "Name": "Chase Burns",
-      "bWAR": 0.67
-    },
-    {
-      "Name": "Connor Phillips",
-      "bWAR": 0.33
-    },
-    {
-      "Name": "Emilio Pag\u00e1n",
-      "bWAR": -0.17
-    },
-    {
-      "Name": "Graham Ashcraft",
       "bWAR": 0.17
     },
     {
+      "Name": "Brock Burke",
+      "bWAR": 0.42
+    },
+    {
+      "Name": "Chase Burns",
+      "bWAR": 0.54
+    },
+    {
+      "Name": "Connor Phillips",
+      "bWAR": 0.49
+    },
+    {
+      "Name": "Emilio Pag\u00e1n",
+      "bWAR": -0.11
+    },
+    {
+      "Name": "Graham Ashcraft",
+      "bWAR": 0.2
+    },
+    {
       "Name": "Jose Franco",
-      "bWAR": 0.0
+      "bWAR": 0.03
+    },
+    {
+      "Name": "Kyle Nicolas",
+      "bWAR": -0.14
+    },
+    {
+      "Name": "P.J. Higgins",
+      "bWAR": 0.03
     },
     {
       "Name": "Pierce Johnson",
-      "bWAR": -0.02
+      "bWAR": 0.02
     },
     {
       "Name": "Rhett Lowder",
-      "bWAR": 0.4
+      "bWAR": 0.52
     },
     {
       "Name": "Sam Moll",
-      "bWAR": 0.5
+      "bWAR": 0.26
     },
     {
       "Name": "Tony Santillan",
-      "bWAR": 0.52
+      "bWAR": 0.55
     }
   ]
 }
