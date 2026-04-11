@@ -1,32 +1,88 @@
 # 🔴 Cincinnati Reds Stats Tracker — 2026
 
-> **Last updated:** 2026-04-10 14:16 UTC
-> Data sources: [FanGraphs](https://www.fangraphs.com) · [Baseball-Reference](https://www.baseball-reference.com)
-> **fWAR** = FanGraphs WAR · **bWAR** = Baseball-Reference WAR
+> **Last updated:** 2026-04-11 02:23 UTC
+> Data sources: [MLB Stats API](https://statsapi.mlb.com) · [Baseball-Reference](https://www.baseball-reference.com)
+> **bWAR** = Baseball-Reference WAR
 
 ---
 
 ## ⚾ Hitting
 
-*Sorted by fWAR · wRC+ = Weighted Runs Created Plus (100 = league avg)*
+*Sorted by bWAR · BB% and K% calculated from plate appearances*
 
-_No data available yet for the current season._
+| Name | G | PA | AB | H | HR | RBI | R | SB | AVG | OBP | SLG | OPS | BB% | K% | bWAR |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Sal Stewart | 14 | 59 | 47 | 16 | 4 | 9 | 8 | 3 | .340 | .458 | .681 | 1.139 | 18.6% | 13.6% | 0.9 |
+| Elly De La Cruz | 14 | 62 | 55 | 13 | 4 | 7 | 10 | 3 | .236 | .323 | .473 | .796 | 11.3% | 29.0% | 0.5 |
+| Matt McLain | 14 | 64 | 55 | 12 | 0 | 3 | 6 | 2 | .218 | .328 | .273 | .601 | 10.9% | 23.4% | -0.1 |
+| P.J. Higgins | 2 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | .000 | .000 | .000 | .000 | 0.0% | 33.3% | -0.1 |
+| Ke'Bryan Hayes | 13 | 37 | 34 | 3 | 0 | 0 | 1 | 0 | .088 | .162 | .088 | .250 | 8.1% | 8.1% | -0.1 |
+| Dane Myers | 12 | 20 | 19 | 5 | 0 | 1 | 1 | 1 | .263 | .300 | .263 | .563 | 5.0% | 15.0% | -0.1 |
+| Eugenio Suárez | 14 | 56 | 52 | 12 | 2 | 8 | 4 | 0 | .231 | .286 | .365 | .651 | 7.1% | 30.4% | -0.1 |
+| Tyler Stephenson | 11 | 37 | 33 | 6 | 2 | 3 | 3 | 0 | .182 | .270 | .364 | .634 | 10.8% | 27.0% | -0.1 |
+| Nathaniel Lowe | 8 | 15 | 14 | 3 | 0 | 2 | 0 | 0 | .214 | .267 | .286 | .553 | 6.7% | 13.3% | -0.1 |
+| Will Benson | 13 | 31 | 28 | 5 | 0 | 1 | 1 | 0 | .179 | .258 | .286 | .544 | 9.7% | 32.3% | -0.2 |
+| Noelvi Marte | 9 | 23 | 21 | 3 | 0 | 0 | 1 | 1 | .143 | .217 | .143 | .360 | 8.7% | 39.1% | -0.2 |
+| Jose Trevino | 3 | 12 | 11 | 1 | 0 | 0 | 0 | 0 | .091 | .167 | .091 | .258 | 8.3% | 25.0% | -0.2 |
+| Spencer Steer | 12 | 47 | 44 | 8 | 1 | 3 | 3 | 0 | .182 | .213 | .318 | .531 | 4.3% | 27.7% | -0.3 |
+| TJ Friedl | 14 | 60 | 52 | 8 | 0 | 1 | 3 | 2 | .154 | .267 | .154 | .421 | 13.3% | 25.0% | -0.4 |
 
 ---
 
 ## 🔥 Pitching
 
-*Sorted by fWAR · All rate stats per 9 innings*
+*Sorted by bWAR · All rate stats per 9 innings*
 
-_No data available yet for the current season._
+| Name | G | GS | IP | W | L | SV | ERA | WHIP | K/9 | BB/9 | HR/9 | K% | BB% | bWAR |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Chase Burns | 3 | 3 | 16.1 | 1 | 1 | 0 | 3.31 | 1.29 | 9.92 | 4.41 | 1.65 | 25.7% | 11.4% | 0.7 |
+| Andrew Abbott | 3 | 3 | 17.0 | 0 | 1 | 0 | 3.18 | 1.41 | 5.82 | 3.18 | 0.53 | 15.3% | 8.3% | 0.6 |
+| Tony Santillan | 6 | 0 | 6.0 | 1 | 0 | 0 | 0.00 | 1.00 | 12.00 | 7.50 | 0.00 | 34.8% | 21.7% | 0.5 |
+| Sam Moll | 7 | 0 | 7.0 | 1 | 0 | 0 | 2.57 | 0.43 | 7.71 | 3.86 | 0.00 | 23.1% | 11.5% | 0.5 |
+| Brock Burke | 6 | 0 | 6.0 | 1 | 0 | 1 | 0.00 | 0.67 | 10.50 | 3.00 | 0.00 | 35.0% | 10.0% | 0.4 |
+| Rhett Lowder | 3 | 3 | 16.1 | 1 | 1 | 0 | 3.31 | 1.22 | 6.06 | 3.31 | 0.55 | 15.9% | 8.7% | 0.4 |
+| Connor Phillips | 7 | 0 | 8.2 | 1 | 0 | 1 | 3.12 | 1.50 | 9.35 | 8.31 | 1.04 | 23.7% | 21.1% | 0.3 |
+| Graham Ashcraft | 7 | 0 | 7.0 | 0 | 0 | 0 | 2.57 | 1.14 | 14.14 | 3.86 | 0.00 | 39.3% | 10.7% | 0.2 |
+| Brandon Williamson | 2 | 2 | 11.1 | 1 | 1 | 0 | 4.76 | 1.06 | 5.56 | 2.38 | 2.38 | 15.2% | 6.5% | 0.1 |
+| Jose Franco | 3 | 0 | 5.2 | 0 | 0 | 0 | 3.18 | 2.12 | 6.35 | 7.94 | 0.00 | 14.8% | 18.5% | 0.0 |
+| Pierce Johnson | 7 | 0 | 5.0 | 0 | 1 | 0 | 5.40 | 1.60 | 7.20 | 1.80 | 1.80 | 17.4% | 4.3% | -0.0 |
+| Emilio Pagán | 7 | 0 | 7.1 | 1 | 0 | 4 | 6.14 | 1.50 | 9.82 | 6.14 | 2.45 | 24.2% | 15.2% | -0.2 |
+| Brady Singer | 3 | 3 | 11.2 | 0 | 1 | 0 | 7.71 | 2.06 | 10.03 | 2.31 | 1.54 | 22.0% | 5.1% | -0.3 |
+| P.J. Higgins | 1 | 0 | 1.0 | 0 | 0 | 0 | 0.00 | 0.00 | 9.00 | 0.00 | 0.00 | 33.3% | 0.0% | - |
+| Kyle Nicolas | 1 | 0 | 0.2 | 0 | 0 | 0 | 40.50 | 6.00 | 13.50 | 27.00 | 13.50 | 16.7% | 33.3% | - |
 
 ---
 
 ## 🧤 Fielding
 
-*Sorted by DRS (Defensive Runs Saved) · UZR/150 = UZR per 150 games · OAA = Outs Above Average*
+*Standard fielding stats · PO = Putouts · A = Assists · E = Errors · FP = Fielding %*
 
-_No data available yet for the current season._
+| Name | Pos | G | GS | Inn | PO | A | E | FP |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Eugenio Suárez | 3B | 3 | 3 | 23.0 | 2 | 5 | 1 | .875 |
+| Will Benson | LF | 2 | 2 | 14.0 | 2 | 0 | 0 | 1.000 |
+| Will Benson | RF | 9 | 6 | 55.0 | 16 | 0 | 0 | 1.000 |
+| Sal Stewart | DH | 1 | 1 | 0.0 | 0 | 0 | 0 | .000 |
+| Sal Stewart | 3B | 1 | 0 | 3.0 | 0 | 0 | 0 | .000 |
+| Spencer Steer | 3B | 1 | 0 | 1.0 | 0 | 0 | 0 | .000 |
+| Nathaniel Lowe | DH | 3 | 3 | 0.0 | 0 | 0 | 0 | .000 |
+| Will Benson | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
+| Jose Trevino | C | 3 | 3 | 28.0 | 28 | 1 | 0 | 1.000 |
+| Sal Stewart | 1B | 13 | 13 | 110.0 | 100 | 7 | 0 | 1.000 |
+| Tyler Stephenson | C | 11 | 10 | 91.0 | 86 | 4 | 0 | 1.000 |
+| Spencer Steer | RF | 3 | 1 | 15.0 | 4 | 0 | 0 | 1.000 |
+| Spencer Steer | LF | 10 | 10 | 76.0 | 12 | 0 | 0 | 1.000 |
+| Spencer Steer | 1B | 4 | 1 | 13.0 | 10 | 0 | 0 | 1.000 |
+| Dane Myers | CF | 11 | 3 | 45.0 | 17 | 0 | 0 | 1.000 |
+| Matt McLain | 2B | 14 | 14 | 127.0 | 22 | 34 | 0 | 1.000 |
+| Noelvi Marte | RF | 8 | 7 | 57.0 | 9 | 0 | 0 | 1.000 |
+| Nathaniel Lowe | 1B | 3 | 0 | 4.0 | 1 | 0 | 0 | 1.000 |
+| P.J. Higgins | C | 1 | 1 | 8.0 | 5 | 0 | 0 | 1.000 |
+| Ke'Bryan Hayes | 3B | 13 | 11 | 100.0 | 8 | 26 | 0 | 1.000 |
+| TJ Friedl | CF | 11 | 11 | 82.0 | 25 | 0 | 0 | 1.000 |
+| TJ Friedl | LF | 11 | 2 | 37.0 | 7 | 0 | 0 | 1.000 |
+| Elly De La Cruz | SS | 14 | 14 | 127.0 | 25 | 34 | 0 | 1.000 |
+| Eugenio Suárez | DH | 11 | 10 | 0.0 | 0 | 0 | 0 | .000 |
 
 ---
 

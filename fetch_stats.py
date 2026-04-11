@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Cincinnati Reds Stats Tracker
-Fetches hitting, pitching, and fielding statistics from FanGraphs (via pybaseball)
-and Baseball-Reference, then writes formatted markdown tables to README.md.
+Fetches hitting, pitching, and fielding statistics from the MLB Stats API
+and Baseball-Reference (bWAR), then writes formatted markdown tables to README.md.
 """
 
 import json
@@ -19,6 +19,10 @@ import requests
 TEAM = "CIN"
 YEAR = datetime.now().year
 
+# MLB Stats API — Reds team ID is 113
+_MLB_TEAM_ID = 113
+_MLB_STATS_URL = "https://statsapi.mlb.com/api/v1/stats"
+
 # BRef raw CSV endpoints — programmatic access intended by BRef
 _BWAR_URLS = {
     "bat":   "https://www.baseball-reference.com/data/war_daily_bat.txt",
@@ -33,7 +37,7 @@ _BWAR_CACHE = Path(__file__).parent / "bwar_cache.json"
 
 
 def normalize_name(name: str) -> str:
-    """Normalize a player name for fuzzy merge across FanGraphs/BRef naming differences."""
+    """Normalize a player name for fuzzy merge across data source naming differences."""
     name = str(name)
     name = "".join(
         c for c in unicodedata.normalize("NFD", name) if unicodedata.category(c) != "Mn"
@@ -48,6 +52,22 @@ def _fmt(series: pd.Series, spec: str, multiply: float = 1.0, suffix: str = "") 
     return series.apply(
         lambda x: f"{x * multiply:{spec}}{suffix}" if pd.notna(x) else "-"
     )
+
+
+def _fetch_mlb_stats(group: str, year: int) -> list:
+    """Fetch per-player stats from the MLB Stats API for the Reds."""
+    params = {
+        "stats": "season",
+        "season": str(year),
+        "group": group,
+        "gameType": "R",
+        "teamId": str(_MLB_TEAM_ID),
+        "playerPool": "All",
+        "limit": "100",
+    }
+    resp = requests.get(_MLB_STATS_URL, params=params, timeout=30)
+    resp.raise_for_status()
+    return resp.json()["stats"][0]["splits"]
 
 
 def _get_bwar(source: str, label: str, year: int) -> pd.DataFrame:
@@ -84,7 +104,8 @@ def _get_bwar(source: str, label: str, year: int) -> pd.DataFrame:
             _BWAR_URLS[source], headers={"User-Agent": _BROWSER_UA}, timeout=30
         )
         resp.raise_for_status()
-        result = _parse(pd.read_csv(StringIO(resp.text)))
+        # BRef serves UTF-8 but may advertise no charset — decode explicitly.
+        result = _parse(pd.read_csv(StringIO(resp.content.decode("utf-8", errors="replace"))))
         _cache_write(result)
         return result
     except Exception as exc:
@@ -130,82 +151,115 @@ def _merge_bwar(df: pd.DataFrame, bwar: pd.DataFrame) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 
 def get_hitting_stats(year: int) -> pd.DataFrame:
-    """Fetch hitting stats from FanGraphs and merge bWAR."""
-    print(f"Fetching hitting stats from FanGraphs ({year})…")
-    raw = pybaseball.batting_stats(year, qual=0)
-    reds = raw[raw["Team"] == TEAM].copy()
+    """Fetch hitting stats from MLB Stats API and merge bWAR."""
+    print(f"Fetching hitting stats from MLB Stats API ({year})…")
+    splits = _fetch_mlb_stats("hitting", year)
 
-    cols = ["Name", "G", "PA", "AB", "H", "HR", "RBI", "R", "SB",
-            "AVG", "OBP", "SLG", "OPS", "BB%", "K%", "wRC+", "WAR"]
-    reds = reds[[c for c in cols if c in reds.columns]].copy()
+    rows = []
+    for s in splits:
+        stat = s["stat"]
+        pa = stat.get("plateAppearances") or 0
+        bb = stat.get("baseOnBalls") or 0
+        so = stat.get("strikeOuts") or 0
+        rows.append({
+            "Name": s["player"]["fullName"],
+            "G":    stat.get("gamesPlayed"),
+            "PA":   pa,
+            "AB":   stat.get("atBats"),
+            "H":    stat.get("hits"),
+            "HR":   stat.get("homeRuns"),
+            "RBI":  stat.get("rbi"),
+            "R":    stat.get("runs"),
+            "SB":   stat.get("stolenBases"),
+            "AVG":  stat.get("avg", "-"),
+            "OBP":  stat.get("obp", "-"),
+            "SLG":  stat.get("slg", "-"),
+            "OPS":  stat.get("ops", "-"),
+            "BB%":  bb / pa if pa > 0 else None,
+            "K%":   so / pa if pa > 0 else None,
+        })
+
+    reds = pd.DataFrame(rows)
     reds = reds[reds["PA"] > 0]
-    reds.rename(columns={"WAR": "fWAR"}, inplace=True)
 
     bwar = _get_bwar("bat", "hitting", year)
     reds = _merge_bwar(reds, bwar)
-    reds.sort_values("fWAR", ascending=False, inplace=True)
+    reds.sort_values("bWAR", ascending=False, na_position="last", inplace=True)
 
-    for col in ["AVG", "OBP", "SLG", "OPS"]:
-        reds[col] = _fmt(reds[col], ".3f")
-    for col in ["BB%", "K%"]:
-        reds[col] = _fmt(reds[col], ".1f", multiply=100, suffix="%")
-    reds["wRC+"] = reds["wRC+"].apply(lambda x: str(int(x)) if pd.notna(x) else "-")
-    reds["fWAR"] = _fmt(reds["fWAR"], ".1f")
+    reds["BB%"]  = _fmt(reds["BB%"], ".1f", multiply=100, suffix="%")
+    reds["K%"]   = _fmt(reds["K%"],  ".1f", multiply=100, suffix="%")
     reds["bWAR"] = _fmt(reds["bWAR"], ".1f")
 
     return reds
 
 
 def get_pitching_stats(year: int) -> pd.DataFrame:
-    """Fetch pitching stats from FanGraphs and merge bWAR."""
-    print(f"Fetching pitching stats from FanGraphs ({year})…")
-    raw = pybaseball.pitching_stats(year, qual=0)
-    reds = raw[raw["Team"] == TEAM].copy()
+    """Fetch pitching stats from MLB Stats API and merge bWAR."""
+    print(f"Fetching pitching stats from MLB Stats API ({year})…")
+    splits = _fetch_mlb_stats("pitching", year)
 
-    cols = ["Name", "G", "GS", "IP", "W", "L", "SV",
-            "ERA", "FIP", "xFIP", "WHIP", "K/9", "BB/9", "HR/9",
-            "K%", "BB%", "WAR"]
-    reds = reds[[c for c in cols if c in reds.columns]].copy()
-    reds.rename(columns={"WAR": "fWAR"}, inplace=True)
+    rows = []
+    for s in splits:
+        stat = s["stat"]
+        bf = stat.get("battersFaced") or 0
+        bb = stat.get("baseOnBalls") or 0
+        so = stat.get("strikeOuts") or 0
+        rows.append({
+            "Name": s["player"]["fullName"],
+            "G":    stat.get("gamesPlayed"),
+            "GS":   stat.get("gamesStarted"),
+            "IP":   stat.get("inningsPitched", "-"),
+            "W":    stat.get("wins"),
+            "L":    stat.get("losses"),
+            "SV":   stat.get("saves"),
+            "ERA":  stat.get("era", "-"),
+            "WHIP": stat.get("whip", "-"),
+            "K/9":  stat.get("strikeoutsPer9Inn", "-"),
+            "BB/9": stat.get("walksPer9Inn", "-"),
+            "HR/9": stat.get("homeRunsPer9", "-"),
+            "K%":   so / bf if bf > 0 else None,
+            "BB%":  bb / bf if bf > 0 else None,
+        })
+
+    reds = pd.DataFrame(rows)
 
     bwar = _get_bwar("pitch", "pitching", year)
     reds = _merge_bwar(reds, bwar)
-    reds.sort_values("fWAR", ascending=False, inplace=True)
+    reds.sort_values("bWAR", ascending=False, na_position="last", inplace=True)
 
-    for col in ["ERA", "FIP", "xFIP", "WHIP", "K/9", "BB/9", "HR/9"]:
-        if col in reds.columns:
-            reds[col] = _fmt(reds[col], ".2f")
-    reds["IP"]   = _fmt(reds["IP"], ".1f")
     reds["K%"]   = _fmt(reds["K%"],  ".1f", multiply=100, suffix="%")
     reds["BB%"]  = _fmt(reds["BB%"], ".1f", multiply=100, suffix="%")
-    reds["fWAR"] = _fmt(reds["fWAR"], ".1f")
     reds["bWAR"] = _fmt(reds["bWAR"], ".1f")
 
     return reds
 
 
 def get_fielding_stats(year: int) -> pd.DataFrame:
-    """Fetch fielding stats from FanGraphs."""
-    print(f"Fetching fielding stats from FanGraphs ({year})…")
-    raw = pybaseball.fielding_stats(year, qual=0)
-    reds = raw[raw["Team"] == TEAM].copy()
+    """Fetch fielding stats from MLB Stats API."""
+    print(f"Fetching fielding stats from MLB Stats API ({year})…")
+    splits = _fetch_mlb_stats("fielding", year)
 
-    reds = reds[reds["Pos"] != "P"].copy()
+    rows = []
+    for s in splits:
+        stat = s["stat"]
+        pos = s.get("position", {}).get("abbreviation", "?")
+        if pos == "P":
+            continue
+        rows.append({
+            "Name": s["player"]["fullName"],
+            "Pos":  pos,
+            "G":    stat.get("gamesPlayed"),
+            "GS":   stat.get("gamesStarted"),
+            "Inn":  stat.get("innings", "-"),
+            "PO":   stat.get("putOuts"),
+            "A":    stat.get("assists"),
+            "E":    stat.get("errors"),
+            "FP":   stat.get("fielding", "-"),
+        })
 
-    preferred = ["Name", "Pos", "G", "GS", "Inn", "PO", "A", "E",
-                 "FP", "DRS", "UZR", "UZR/150", "OAA"]
-    reds = reds[[c for c in preferred if c in reds.columns]].copy()
-
-    if "DRS" in reds.columns:
-        reds.sort_values("DRS", ascending=False, inplace=True)
-
-    for col in ["UZR", "UZR/150", "DRS", "OAA"]:
-        if col in reds.columns:
-            reds[col] = _fmt(reds[col], ".1f")
-    if "FP" in reds.columns:
-        reds["FP"] = _fmt(reds["FP"], ".3f")
-    if "Inn" in reds.columns:
-        reds["Inn"] = _fmt(reds["Inn"], ".1f")
+    reds = pd.DataFrame(rows)
+    if not reds.empty and "E" in reds.columns:
+        reds.sort_values("E", ascending=False, inplace=True)
 
     return reds
 
@@ -239,28 +293,28 @@ def generate_readme(
 # 🔴 Cincinnati Reds Stats Tracker — {year}
 
 > **Last updated:** {timestamp}
-> Data sources: [FanGraphs](https://www.fangraphs.com) · [Baseball-Reference](https://www.baseball-reference.com)
-> **fWAR** = FanGraphs WAR · **bWAR** = Baseball-Reference WAR
+> Data sources: [MLB Stats API](https://statsapi.mlb.com) · [Baseball-Reference](https://www.baseball-reference.com)
+> **bWAR** = Baseball-Reference WAR
 
 ---
 
 ## ⚾ Hitting
 
-*Sorted by fWAR · wRC+ = Weighted Runs Created Plus (100 = league avg)*
+*Sorted by bWAR · BB% and K% calculated from plate appearances*
 
 {df_to_markdown(hitting)}
 ---
 
 ## 🔥 Pitching
 
-*Sorted by fWAR · All rate stats per 9 innings*
+*Sorted by bWAR · All rate stats per 9 innings*
 
 {df_to_markdown(pitching)}
 ---
 
 ## 🧤 Fielding
 
-*Sorted by DRS (Defensive Runs Saved) · UZR/150 = UZR per 150 games · OAA = Outs Above Average*
+*Standard fielding stats · PO = Putouts · A = Assists · E = Errors · FP = Fielding %*
 
 {df_to_markdown(fielding)}
 ---
