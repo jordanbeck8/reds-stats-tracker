@@ -1,6 +1,6 @@
 # 🔴 Cincinnati Reds Stats Tracker — 2026
 
-> **Last updated:** 2026-04-12 11:00 UTC
+> **Last updated:** 2026-04-12 13:59 UTC
 > Data sources: [MLB Stats API](https://statsapi.mlb.com) · [Baseball-Reference](https://www.baseball-reference.com)
 > **bWAR** = Baseball-Reference WAR
 
@@ -18,8 +18,8 @@
 | P.J. Higgins | 2 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | .000 | .000 | .000 | .000 | 0.0% | 33.3% | -0.1 |
 | Eugenio Suárez | 15 | 61 | 56 | 13 | 2 | 8 | 5 | 0 | .232 | .295 | .357 | .652 | 8.2% | 31.1% | -0.1 |
 | Nathaniel Lowe | 9 | 19 | 18 | 4 | 0 | 5 | 0 | 0 | .222 | .263 | .333 | .596 | 5.3% | 15.8% | -0.1 |
-| Matt McLain | 15 | 65 | 55 | 12 | 0 | 3 | 6 | 3 | .218 | .338 | .273 | .611 | 12.3% | 23.1% | -0.2 |
 | Will Benson | 13 | 31 | 28 | 5 | 0 | 1 | 1 | 0 | .179 | .258 | .286 | .544 | 9.7% | 32.3% | -0.2 |
+| Matt McLain | 15 | 65 | 55 | 12 | 0 | 3 | 6 | 3 | .218 | .338 | .273 | .611 | 12.3% | 23.1% | -0.2 |
 | Ke'Bryan Hayes | 14 | 41 | 38 | 3 | 0 | 0 | 1 | 0 | .079 | .146 | .079 | .225 | 7.3% | 7.3% | -0.2 |
 | Jose Trevino | 3 | 12 | 11 | 1 | 0 | 0 | 0 | 0 | .091 | .167 | .091 | .258 | 8.3% | 25.0% | -0.2 |
 | Dane Myers | 13 | 20 | 19 | 5 | 0 | 1 | 1 | 1 | .263 | .300 | .263 | .563 | 5.0% | 15.0% | -0.3 |
@@ -60,29 +60,29 @@
 | Name | Pos | G | GS | Inn | PO | A | E | FP |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Eugenio Suárez | 3B | 3 | 3 | 23.0 | 2 | 5 | 1 | .875 |
-| Will Benson | LF | 2 | 2 | 14.0 | 2 | 0 | 0 | 1.000 |
-| Spencer Steer | RF | 3 | 1 | 15.0 | 4 | 0 | 0 | 1.000 |
-| Sal Stewart | DH | 1 | 1 | 0.0 | 0 | 0 | 0 | .000 |
-| Sal Stewart | 3B | 1 | 0 | 3.0 | 0 | 0 | 0 | .000 |
-| Spencer Steer | 3B | 1 | 0 | 1.0 | 0 | 0 | 0 | .000 |
-| Nathaniel Lowe | DH | 3 | 3 | 0.0 | 0 | 0 | 0 | .000 |
-| Will Benson | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
-| Jose Trevino | C | 3 | 3 | 28.0 | 28 | 1 | 0 | 1.000 |
-| Sal Stewart | 2B | 1 | 1 | 7.0 | 4 | 2 | 0 | 1.000 |
-| Sal Stewart | 1B | 14 | 13 | 112.0 | 102 | 7 | 0 | 1.000 |
-| Tyler Stephenson | C | 12 | 11 | 100.0 | 93 | 5 | 0 | 1.000 |
-| Spencer Steer | LF | 11 | 11 | 83.0 | 16 | 0 | 0 | 1.000 |
 | Will Benson | RF | 9 | 6 | 55.0 | 16 | 0 | 0 | 1.000 |
+| Elly De La Cruz | SS | 15 | 15 | 136.0 | 26 | 36 | 0 | 1.000 |
+| TJ Friedl | LF | 12 | 2 | 39.0 | 9 | 0 | 0 | 1.000 |
+| TJ Friedl | CF | 12 | 12 | 89.0 | 25 | 0 | 0 | 1.000 |
+| Ke'Bryan Hayes | 3B | 14 | 12 | 109.0 | 9 | 27 | 0 | 1.000 |
+| P.J. Higgins | C | 1 | 1 | 8.0 | 5 | 0 | 0 | 1.000 |
+| Nathaniel Lowe | 1B | 4 | 1 | 11.0 | 4 | 0 | 0 | 1.000 |
+| Will Benson | LF | 2 | 2 | 14.0 | 2 | 0 | 0 | 1.000 |
+| Noelvi Marte | RF | 9 | 8 | 66.0 | 11 | 0 | 0 | 1.000 |
+| Matt McLain | 2B | 15 | 14 | 129.0 | 22 | 35 | 0 | 1.000 |
 | Spencer Steer | 1B | 4 | 1 | 13.0 | 10 | 0 | 0 | 1.000 |
 | Dane Myers | CF | 12 | 3 | 47.0 | 18 | 0 | 0 | 1.000 |
-| Matt McLain | 2B | 15 | 14 | 129.0 | 22 | 35 | 0 | 1.000 |
-| Noelvi Marte | RF | 9 | 8 | 66.0 | 11 | 0 | 0 | 1.000 |
-| Nathaniel Lowe | 1B | 4 | 1 | 11.0 | 4 | 0 | 0 | 1.000 |
-| P.J. Higgins | C | 1 | 1 | 8.0 | 5 | 0 | 0 | 1.000 |
-| Ke'Bryan Hayes | 3B | 14 | 12 | 109.0 | 9 | 27 | 0 | 1.000 |
-| TJ Friedl | CF | 12 | 12 | 89.0 | 25 | 0 | 0 | 1.000 |
-| TJ Friedl | LF | 12 | 2 | 39.0 | 9 | 0 | 0 | 1.000 |
-| Elly De La Cruz | SS | 15 | 15 | 136.0 | 26 | 36 | 0 | 1.000 |
+| Spencer Steer | RF | 3 | 1 | 15.0 | 4 | 0 | 0 | 1.000 |
+| Tyler Stephenson | C | 12 | 11 | 100.0 | 93 | 5 | 0 | 1.000 |
+| Sal Stewart | 1B | 14 | 13 | 112.0 | 102 | 7 | 0 | 1.000 |
+| Spencer Steer | LF | 11 | 11 | 83.0 | 16 | 0 | 0 | 1.000 |
+| Sal Stewart | 2B | 1 | 1 | 7.0 | 4 | 2 | 0 | 1.000 |
+| Jose Trevino | C | 3 | 3 | 28.0 | 28 | 1 | 0 | 1.000 |
+| Will Benson | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
+| Nathaniel Lowe | DH | 3 | 3 | 0.0 | 0 | 0 | 0 | .000 |
+| Spencer Steer | 3B | 1 | 0 | 1.0 | 0 | 0 | 0 | .000 |
+| Sal Stewart | 3B | 1 | 0 | 3.0 | 0 | 0 | 0 | .000 |
+| Sal Stewart | DH | 1 | 1 | 0.0 | 0 | 0 | 0 | .000 |
 | Eugenio Suárez | DH | 12 | 11 | 0.0 | 0 | 0 | 0 | .000 |
 
 ---
