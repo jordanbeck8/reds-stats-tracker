@@ -1,6 +1,6 @@
 # 🔴 Cincinnati Reds Stats Tracker — 2026
 
-> **Last updated:** 2026-04-13 11:00 UTC
+> **Last updated:** 2026-04-13 14:47 UTC
 > Data sources: [MLB Stats API](https://statsapi.mlb.com) · [Baseball-Reference](https://www.baseball-reference.com)
 > **bWAR** = Baseball-Reference WAR
 
@@ -42,9 +42,9 @@
 | Brock Burke | 7 | 0 | 7.1 | 1 | 0 | 1 | 1.23 | 0.82 | 8.59 | 3.68 | 0.00 | 26.9% | 11.5% | 0.4 |
 | Graham Ashcraft | 8 | 0 | 8.0 | 0 | 0 | 0 | 2.25 | 1.13 | 12.38 | 3.38 | 0.00 | 35.5% | 9.7% | 0.3 |
 | Sam Moll | 8 | 0 | 8.2 | 1 | 0 | 0 | 2.08 | 0.69 | 7.27 | 6.23 | 0.00 | 20.0% | 17.1% | 0.2 |
-| Pierce Johnson | 8 | 0 | 6.1 | 1 | 1 | 0 | 4.26 | 1.42 | 9.95 | 1.42 | 1.42 | 25.0% | 3.6% | 0.1 |
-| Brandon Williamson | 3 | 3 | 15.1 | 1 | 1 | 0 | 5.28 | 1.37 | 5.87 | 5.28 | 1.76 | 14.9% | 13.4% | 0.1 |
 | Andrew Abbott | 4 | 4 | 20.0 | 0 | 2 | 0 | 5.85 | 1.70 | 5.40 | 3.60 | 0.90 | 13.3% | 8.9% | 0.1 |
+| Brandon Williamson | 3 | 3 | 15.1 | 1 | 1 | 0 | 5.28 | 1.37 | 5.87 | 5.28 | 1.76 | 14.9% | 13.4% | 0.1 |
+| Pierce Johnson | 8 | 0 | 6.1 | 1 | 1 | 0 | 4.26 | 1.42 | 9.95 | 1.42 | 1.42 | 25.0% | 3.6% | 0.1 |
 | P.J. Higgins | 1 | 0 | 1.0 | 0 | 0 | 0 | 0.00 | 0.00 | 9.00 | 0.00 | 0.00 | 33.3% | 0.0% | 0.0 |
 | Jose Franco | 3 | 0 | 5.2 | 0 | 0 | 0 | 3.18 | 2.12 | 6.35 | 7.94 | 0.00 | 14.8% | 18.5% | 0.0 |
 | Emilio Pagán | 8 | 0 | 8.1 | 1 | 0 | 4 | 5.40 | 1.44 | 8.64 | 6.48 | 2.16 | 21.6% | 16.2% | 0.0 |
@@ -59,30 +59,30 @@
 
 | Name | Pos | G | GS | Inn | PO | A | E | FP |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Eugenio Suárez | 3B | 4 | 4 | 30.0 | 4 | 5 | 1 | .900 |
-| P.J. Higgins | C | 2 | 2 | 17.0 | 8 | 1 | 1 | .900 |
-| Spencer Steer | 1B | 5 | 1 | 15.0 | 11 | 0 | 1 | .917 |
 | Spencer Steer | LF | 12 | 12 | 90.0 | 18 | 0 | 1 | .947 |
-| Will Benson | LF | 3 | 2 | 16.0 | 2 | 0 | 0 | 1.000 |
-| Sal Stewart | 2B | 1 | 1 | 7.0 | 4 | 2 | 0 | 1.000 |
-| Sal Stewart | DH | 1 | 1 | 0.0 | 0 | 0 | 0 | .000 |
-| Spencer Steer | 3B | 1 | 0 | 1.0 | 0 | 0 | 0 | .000 |
-| Nathaniel Lowe | DH | 4 | 4 | 0.0 | 0 | 0 | 0 | .000 |
-| Will Benson | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
-| Jose Trevino | C | 3 | 3 | 28.0 | 28 | 1 | 0 | 1.000 |
-| Sal Stewart | 3B | 2 | 0 | 5.0 | 0 | 1 | 0 | 1.000 |
-| Sal Stewart | 1B | 15 | 14 | 119.0 | 109 | 7 | 0 | 1.000 |
+| Spencer Steer | 1B | 5 | 1 | 15.0 | 11 | 0 | 1 | .917 |
+| P.J. Higgins | C | 2 | 2 | 17.0 | 8 | 1 | 1 | .900 |
+| Eugenio Suárez | 3B | 4 | 4 | 30.0 | 4 | 5 | 1 | .900 |
+| TJ Friedl | CF | 13 | 13 | 98.0 | 31 | 1 | 0 | 1.000 |
 | Will Benson | RF | 9 | 6 | 55.0 | 16 | 0 | 0 | 1.000 |
-| Tyler Stephenson | C | 12 | 11 | 100.0 | 93 | 5 | 0 | 1.000 |
-| Spencer Steer | RF | 3 | 1 | 15.0 | 4 | 0 | 0 | 1.000 |
-| Dane Myers | CF | 12 | 3 | 47.0 | 18 | 0 | 0 | 1.000 |
+| Elly De La Cruz | SS | 16 | 16 | 145.0 | 26 | 39 | 0 | 1.000 |
+| TJ Friedl | LF | 12 | 2 | 39.0 | 9 | 0 | 0 | 1.000 |
+| Will Benson | LF | 3 | 2 | 16.0 | 2 | 0 | 0 | 1.000 |
 | Matt McLain | 2B | 16 | 15 | 138.0 | 25 | 40 | 0 | 1.000 |
 | Noelvi Marte | RF | 10 | 9 | 75.0 | 14 | 0 | 0 | 1.000 |
 | Nathaniel Lowe | 1B | 4 | 1 | 11.0 | 4 | 0 | 0 | 1.000 |
 | Ke'Bryan Hayes | 3B | 14 | 12 | 109.0 | 9 | 27 | 0 | 1.000 |
-| TJ Friedl | CF | 13 | 13 | 98.0 | 31 | 1 | 0 | 1.000 |
-| TJ Friedl | LF | 12 | 2 | 39.0 | 9 | 0 | 0 | 1.000 |
-| Elly De La Cruz | SS | 16 | 16 | 145.0 | 26 | 39 | 0 | 1.000 |
+| Sal Stewart | 1B | 15 | 14 | 119.0 | 109 | 7 | 0 | 1.000 |
+| Dane Myers | CF | 12 | 3 | 47.0 | 18 | 0 | 0 | 1.000 |
+| Tyler Stephenson | C | 12 | 11 | 100.0 | 93 | 5 | 0 | 1.000 |
+| Spencer Steer | RF | 3 | 1 | 15.0 | 4 | 0 | 0 | 1.000 |
+| Jose Trevino | C | 3 | 3 | 28.0 | 28 | 1 | 0 | 1.000 |
+| Sal Stewart | 3B | 2 | 0 | 5.0 | 0 | 1 | 0 | 1.000 |
+| Sal Stewart | 2B | 1 | 1 | 7.0 | 4 | 2 | 0 | 1.000 |
+| Will Benson | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
+| Nathaniel Lowe | DH | 4 | 4 | 0.0 | 0 | 0 | 0 | .000 |
+| Spencer Steer | 3B | 1 | 0 | 1.0 | 0 | 0 | 0 | .000 |
+| Sal Stewart | DH | 1 | 1 | 0.0 | 0 | 0 | 0 | .000 |
 | Eugenio Suárez | DH | 12 | 11 | 0.0 | 0 | 0 | 0 | .000 |
 
 ---
