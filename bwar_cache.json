@@ -2,35 +2,35 @@
   "bat_2026": [
     {
       "Name": "Dane Myers",
-      "bWAR": -0.29
+      "bWAR": -0.24
     },
     {
       "Name": "Elly De La Cruz",
-      "bWAR": 0.99
+      "bWAR": 1.13
     },
     {
       "Name": "Eugenio Su\u00e1rez",
-      "bWAR": -0.13
+      "bWAR": -0.14
     },
     {
       "Name": "Jose Trevino",
-      "bWAR": -0.23
+      "bWAR": -0.24
     },
     {
       "Name": "Ke'Bryan Hayes",
-      "bWAR": -0.21
+      "bWAR": -0.2
     },
     {
       "Name": "Matt McLain",
-      "bWAR": -0.18
+      "bWAR": -0.23
     },
     {
       "Name": "Nathaniel Lowe",
-      "bWAR": -0.15
+      "bWAR": -0.08
     },
     {
       "Name": "Noelvi Marte",
-      "bWAR": -0.31
+      "bWAR": -0.34
     },
     {
       "Name": "P.J. Higgins",
@@ -38,65 +38,65 @@
     },
     {
       "Name": "Sal Stewart",
-      "bWAR": 0.94
+      "bWAR": 0.9
     },
     {
       "Name": "Spencer Steer",
-      "bWAR": -0.29
+      "bWAR": -0.5
     },
     {
       "Name": "TJ Friedl",
-      "bWAR": -0.31
+      "bWAR": -0.29
     },
     {
       "Name": "Tyler Stephenson",
-      "bWAR": 0.17
+      "bWAR": 0.18
     },
     {
       "Name": "Will Benson",
-      "bWAR": -0.18
+      "bWAR": -0.14
     }
   ],
   "pitch_2026": [
     {
       "Name": "Andrew Abbott",
-      "bWAR": 0.69
+      "bWAR": 0.11
     },
     {
       "Name": "Brady Singer",
-      "bWAR": -0.27
+      "bWAR": -0.26
     },
     {
       "Name": "Brandon Williamson",
-      "bWAR": 0.09
+      "bWAR": 0.11
     },
     {
       "Name": "Brock Burke",
-      "bWAR": 0.42
+      "bWAR": 0.37
     },
     {
       "Name": "Chase Burns",
-      "bWAR": 0.51
+      "bWAR": 0.53
     },
     {
       "Name": "Connor Phillips",
-      "bWAR": 0.52
+      "bWAR": 0.57
     },
     {
       "Name": "Emilio Pag\u00e1n",
-      "bWAR": -0.02
+      "bWAR": 0.0
     },
     {
       "Name": "Graham Ashcraft",
-      "bWAR": 0.27
+      "bWAR": 0.29
     },
     {
       "Name": "Jose Franco",
-      "bWAR": 0.02
+      "bWAR": 0.03
     },
     {
       "Name": "Kyle Nicolas",
-      "bWAR": -0.14
+      "bWAR": -0.08
     },
     {
       "Name": "P.J. Higgins",
@@ -104,7 +104,7 @@
     },
     {
       "Name": "Pierce Johnson",
-      "bWAR": 0.1
+      "bWAR": 0.11
     },
     {
       "Name": "Rhett Lowder",
@@ -112,11 +112,11 @@
     },
     {
       "Name": "Sam Moll",
-      "bWAR": 0.26
+      "bWAR": 0.25
     },
     {
       "Name": "Tony Santillan",
-      "bWAR": 0.62
+      "bWAR": 0.63
     }
   ]
 }
