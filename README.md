@@ -1,6 +1,6 @@
 # 🔴 Cincinnati Reds Stats Tracker — 2026
 
-> **Last updated:** 2026-04-20 11:00 UTC
+> **Last updated:** 2026-04-20 14:50 UTC
 > Data sources: [MLB Stats API](https://statsapi.mlb.com) · [Baseball-Reference](https://www.baseball-reference.com)
 > **bWAR** = Baseball-Reference WAR
 
@@ -61,30 +61,30 @@
 | Name | Pos | G | GS | Inn | PO | A | E | FP |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Elly De La Cruz | SS | 22 | 22 | 200.0 | 32 | 49 | 3 | .964 |
-| Eugenio Suárez | 3B | 5 | 5 | 38.0 | 4 | 8 | 1 | .923 |
-| Spencer Steer | 1B | 7 | 1 | 20.0 | 13 | 0 | 1 | .929 |
+| Ke'Bryan Hayes | 3B | 20 | 17 | 151.0 | 15 | 39 | 1 | .982 |
 | P.J. Higgins | C | 4 | 3 | 28.0 | 19 | 2 | 1 | .955 |
 | Spencer Steer | LF | 17 | 17 | 127.0 | 30 | 0 | 1 | .968 |
-| Ke'Bryan Hayes | 3B | 20 | 17 | 151.0 | 15 | 39 | 1 | .982 |
+| Eugenio Suárez | 3B | 5 | 5 | 38.0 | 4 | 8 | 1 | .923 |
+| Spencer Steer | 1B | 7 | 1 | 20.0 | 13 | 0 | 1 | .929 |
+| TJ Friedl | LF | 16 | 2 | 48.0 | 10 | 0 | 0 | 1.000 |
+| TJ Friedl | CF | 18 | 18 | 133.0 | 48 | 1 | 0 | 1.000 |
 | Will Benson | LF | 6 | 3 | 25.0 | 3 | 0 | 0 | 1.000 |
 | Will Benson | RF | 10 | 7 | 62.0 | 22 | 0 | 0 | 1.000 |
-| Sal Stewart | DH | 1 | 1 | 0.0 | 0 | 0 | 0 | .000 |
-| Spencer Steer | 3B | 1 | 0 | 1.0 | 0 | 0 | 0 | .000 |
-| Nathaniel Lowe | DH | 5 | 5 | 0.0 | 0 | 0 | 0 | .000 |
-| Will Benson | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
-| Jose Trevino | C | 3 | 3 | 28.0 | 28 | 1 | 0 | 1.000 |
-| Sal Stewart | 3B | 4 | 0 | 10.0 | 2 | 1 | 0 | 1.000 |
-| Sal Stewart | 2B | 2 | 2 | 14.0 | 5 | 2 | 0 | 1.000 |
-| Sal Stewart | 1B | 21 | 19 | 162.0 | 142 | 7 | 0 | 1.000 |
-| Tyler Stephenson | C | 17 | 16 | 144.0 | 125 | 7 | 0 | 1.000 |
 | Spencer Steer | RF | 4 | 1 | 17.0 | 4 | 0 | 0 | 1.000 |
 | Dane Myers | CF | 17 | 4 | 67.0 | 23 | 0 | 0 | 1.000 |
 | Matt McLain | 2B | 22 | 20 | 186.0 | 33 | 51 | 0 | 1.000 |
 | Noelvi Marte | RF | 10 | 9 | 75.0 | 14 | 0 | 0 | 1.000 |
 | Nathaniel Lowe | 1B | 5 | 2 | 18.0 | 10 | 0 | 0 | 1.000 |
 | Rece Hinds | RF | 5 | 5 | 46.0 | 16 | 0 | 0 | 1.000 |
-| TJ Friedl | CF | 18 | 18 | 133.0 | 48 | 1 | 0 | 1.000 |
-| TJ Friedl | LF | 16 | 2 | 48.0 | 10 | 0 | 0 | 1.000 |
+| Sal Stewart | 3B | 4 | 0 | 10.0 | 2 | 1 | 0 | 1.000 |
+| Tyler Stephenson | C | 17 | 16 | 144.0 | 125 | 7 | 0 | 1.000 |
+| Jose Trevino | C | 3 | 3 | 28.0 | 28 | 1 | 0 | 1.000 |
+| Sal Stewart | 1B | 21 | 19 | 162.0 | 142 | 7 | 0 | 1.000 |
+| Sal Stewart | 2B | 2 | 2 | 14.0 | 5 | 2 | 0 | 1.000 |
+| Will Benson | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
+| Nathaniel Lowe | DH | 5 | 5 | 0.0 | 0 | 0 | 0 | .000 |
+| Spencer Steer | 3B | 1 | 0 | 1.0 | 0 | 0 | 0 | .000 |
+| Sal Stewart | DH | 1 | 1 | 0.0 | 0 | 0 | 0 | .000 |
 | Eugenio Suárez | DH | 17 | 16 | 0.0 | 0 | 0 | 0 | .000 |
 
 ---
