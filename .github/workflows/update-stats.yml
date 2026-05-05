@@ -6,18 +6,24 @@ on:
     - cron: "0 13 * * *"
   workflow_dispatch:  # Allow manual trigger from GitHub UI
 
+# RST-002: Least-privilege — default read-only; write elevated per-job only
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # RST-005: pin to specific LTS runner (was ubuntu-latest)
+    # RST-002: contents: write scoped to this job only (commit/push step needs it)
+    permissions:
+      contents: write
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        # RST-001: pinned to immutable commit SHA (was @v4)
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        # RST-001: pinned to immutable commit SHA (was @v5)
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5
         with:
           python-version: "3.12"
 
