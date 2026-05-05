@@ -65,7 +65,7 @@ def _fetch_mlb_stats(group: str, year: int) -> list:
         "playerPool": "All",
         "limit": "100",
     }
-    resp = requests.get(_MLB_STATS_URL, params=params, timeout=30)
+    resp = requests.get(_MLB_STATS_URL, params=params, timeout=30, verify=True)  # RST-004: explicit TLS verification
     resp.raise_for_status()
     return resp.json()["stats"][0]["splits"]
 
@@ -101,7 +101,7 @@ def _get_bwar(source: str, label: str, year: int) -> pd.DataFrame:
     # Attempt 1: direct request with browser User-Agent
     try:
         resp = requests.get(
-            _BWAR_URLS[source], headers={"User-Agent": _BROWSER_UA}, timeout=30
+            _BWAR_URLS[source], headers={"User-Agent": _BROWSER_UA}, timeout=30, verify=True  # RST-004: explicit TLS verification
         )
         resp.raise_for_status()
         # BRef serves UTF-8 but may advertise no charset — decode explicitly.
