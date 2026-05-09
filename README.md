@@ -1,6 +1,6 @@
 # 🔴 Cincinnati Reds Stats Tracker — 2026
 
-> **Last updated:** 2026-05-09 11:03 UTC
+> **Last updated:** 2026-05-09 14:16 UTC
 > Data sources: [MLB Stats API](https://statsapi.mlb.com) · [Baseball-Reference](https://www.baseball-reference.com)
 > **bWAR** = Baseball-Reference WAR
 
@@ -47,8 +47,8 @@
 | Luis Mey | 3 | 0 | 5.0 | 0 | 0 | 0 | 1.80 | 1.00 | 10.80 | 5.40 | 1.80 | 27.3% | 13.6% | 0.1 |
 | Connor Phillips | 19 | 0 | 20.0 | 1 | 0 | 1 | 5.40 | 1.80 | 9.45 | 9.45 | 0.45 | 21.6% | 21.6% | 0.1 |
 | Chase Petty | 1 | 1 | 5.2 | 0 | 0 | 0 | 4.76 | 1.06 | 1.59 | 3.18 | 1.59 | 4.3% | 8.7% | 0.1 |
-| Brady Singer | 8 | 8 | 38.1 | 2 | 2 | 0 | 5.63 | 1.64 | 6.10 | 2.35 | 1.88 | 14.6% | 5.6% | 0.0 |
 | P.J. Higgins | 1 | 0 | 1.0 | 0 | 0 | 0 | 0.00 | 0.00 | 9.00 | 0.00 | 0.00 | 33.3% | 0.0% | 0.0 |
+| Brady Singer | 8 | 8 | 38.1 | 2 | 2 | 0 | 5.63 | 1.64 | 6.10 | 2.35 | 1.88 | 14.6% | 5.6% | 0.0 |
 | Tejay Antone | 2 | 0 | 2.0 | 0 | 0 | 0 | 4.50 | 0.50 | 9.00 | 0.00 | 0.00 | 28.6% | 0.0% | 0.0 |
 | Jose Franco | 8 | 0 | 14.2 | 0 | 0 | 0 | 4.30 | 1.77 | 7.36 | 6.75 | 1.23 | 17.9% | 16.4% | 0.0 |
 | Brock Burke | 18 | 0 | 16.2 | 1 | 2 | 1 | 3.24 | 1.62 | 11.34 | 5.94 | 0.00 | 27.3% | 14.3% | 0.0 |
@@ -70,36 +70,36 @@
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Elly De La Cruz | SS | 38 | 38 | 336.1 | 54 | 95 | 3 | .980 |
 | Ke'Bryan Hayes | 3B | 35 | 30 | 265.1 | 23 | 61 | 2 | .977 |
+| Will Benson | RF | 20 | 14 | 117.2 | 35 | 0 | 1 | .972 |
 | Spencer Steer | 1B | 15 | 7 | 70.2 | 65 | 3 | 1 | .986 |
 | Eugenio Suárez | 3B | 6 | 6 | 46.0 | 4 | 8 | 1 | .923 |
 | TJ Friedl | LF | 23 | 2 | 65.0 | 16 | 0 | 1 | .941 |
-| P.J. Higgins | C | 5 | 4 | 36.0 | 24 | 2 | 1 | .963 |
-| Will Benson | RF | 20 | 14 | 117.2 | 35 | 0 | 1 | .972 |
 | Spencer Steer | LF | 23 | 23 | 171.0 | 39 | 0 | 1 | .975 |
-| Sal Stewart | DH | 1 | 1 | 0.0 | 0 | 0 | 0 | .000 |
-| Spencer Steer | 3B | 1 | 0 | 1.0 | 0 | 0 | 0 | .000 |
-| Nathaniel Lowe | DH | 19 | 19 | 0.0 | 0 | 0 | 0 | .000 |
-| Blake Dunn | DH | 2 | 0 | 0.0 | 0 | 0 | 0 | .000 |
-| Blake Dunn | RF | 1 | 1 | 7.0 | 0 | 0 | 0 | .000 |
-| Blake Dunn | CF | 1 | 0 | 1.0 | 0 | 0 | 0 | .000 |
-| Elly De La Cruz | DH | 1 | 1 | 0.0 | 0 | 0 | 0 | .000 |
-| Will Benson | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
+| P.J. Higgins | C | 5 | 4 | 36.0 | 24 | 2 | 1 | .963 |
 | Will Benson | LF | 6 | 3 | 25.0 | 3 | 0 | 0 | 1.000 |
+| Matt McLain | SS | 2 | 1 | 12.0 | 1 | 3 | 0 | 1.000 |
 | Will Benson | CF | 1 | 0 | 3.0 | 2 | 0 | 0 | 1.000 |
+| TJ Friedl | CF | 31 | 31 | 225.0 | 78 | 1 | 0 | 1.000 |
+| JJ Bleday | LF | 11 | 11 | 87.1 | 14 | 0 | 0 | 1.000 |
+| Nathaniel Lowe | 1B | 5 | 2 | 18.0 | 10 | 0 | 0 | 1.000 |
+| Noelvi Marte | RF | 10 | 9 | 75.0 | 14 | 0 | 0 | 1.000 |
+| Matt McLain | 2B | 37 | 34 | 311.1 | 66 | 91 | 0 | 1.000 |
+| Rece Hinds | RF | 10 | 9 | 81.0 | 26 | 0 | 0 | 1.000 |
 | Jose Trevino | C | 8 | 7 | 60.0 | 64 | 3 | 0 | 1.000 |
 | Sal Stewart | 3B | 9 | 3 | 36.0 | 4 | 7 | 0 | 1.000 |
 | Sal Stewart | 2B | 5 | 5 | 37.0 | 11 | 11 | 0 | 1.000 |
 | Sal Stewart | 1B | 34 | 30 | 259.2 | 221 | 9 | 0 | 1.000 |
-| Tyler Stephenson | C | 32 | 28 | 252.1 | 214 | 10 | 0 | 1.000 |
 | Spencer Steer | RF | 12 | 6 | 67.2 | 16 | 1 | 0 | 1.000 |
+| Tyler Stephenson | C | 32 | 28 | 252.1 | 214 | 10 | 0 | 1.000 |
 | Dane Myers | CF | 28 | 8 | 119.1 | 37 | 0 | 0 | 1.000 |
-| Matt McLain | SS | 2 | 1 | 12.0 | 1 | 3 | 0 | 1.000 |
-| Matt McLain | 2B | 37 | 34 | 311.1 | 66 | 91 | 0 | 1.000 |
-| Noelvi Marte | RF | 10 | 9 | 75.0 | 14 | 0 | 0 | 1.000 |
-| Nathaniel Lowe | 1B | 5 | 2 | 18.0 | 10 | 0 | 0 | 1.000 |
-| Rece Hinds | RF | 10 | 9 | 81.0 | 26 | 0 | 0 | 1.000 |
-| TJ Friedl | CF | 31 | 31 | 225.0 | 78 | 1 | 0 | 1.000 |
-| JJ Bleday | LF | 11 | 11 | 87.1 | 14 | 0 | 0 | 1.000 |
+| Will Benson | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
+| Elly De La Cruz | DH | 1 | 1 | 0.0 | 0 | 0 | 0 | .000 |
+| Blake Dunn | CF | 1 | 0 | 1.0 | 0 | 0 | 0 | .000 |
+| Blake Dunn | RF | 1 | 1 | 7.0 | 0 | 0 | 0 | .000 |
+| Blake Dunn | DH | 2 | 0 | 0.0 | 0 | 0 | 0 | .000 |
+| Nathaniel Lowe | DH | 19 | 19 | 0.0 | 0 | 0 | 0 | .000 |
+| Spencer Steer | 3B | 1 | 0 | 1.0 | 0 | 0 | 0 | .000 |
+| Sal Stewart | DH | 1 | 1 | 0.0 | 0 | 0 | 0 | .000 |
 | Eugenio Suárez | DH | 19 | 18 | 0.0 | 0 | 0 | 0 | .000 |
 
 ---
