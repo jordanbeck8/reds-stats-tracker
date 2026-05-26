@@ -1,6 +1,6 @@
 # 🔴 Cincinnati Reds Stats Tracker — 2026
 
-> **Last updated:** 2026-05-26 11:00 UTC
+> **Last updated:** 2026-05-26 16:41 UTC
 > Data sources: [MLB Stats API](https://statsapi.mlb.com) · [Baseball-Reference](https://www.baseball-reference.com)
 > **bWAR** = Baseball-Reference WAR
 
@@ -13,8 +13,8 @@
 | Name | G | PA | AB | H | HR | RBI | R | SB | AVG | OBP | SLG | OPS | BB% | K% | bWAR |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Elly De La Cruz | 53 | 236 | 213 | 60 | 12 | 35 | 37 | 9 | .282 | .347 | .516 | .863 | 8.9% | 29.2% | 2.0 |
-| JJ Bleday | 25 | 106 | 89 | 24 | 7 | 21 | 15 | 1 | .270 | .377 | .596 | .973 | 15.1% | 17.9% | 1.0 |
 | Sal Stewart | 53 | 231 | 198 | 50 | 12 | 34 | 33 | 10 | .253 | .351 | .480 | .831 | 13.0% | 19.5% | 1.0 |
+| JJ Bleday | 25 | 106 | 89 | 24 | 7 | 21 | 15 | 1 | .270 | .377 | .596 | .973 | 15.1% | 17.9% | 1.0 |
 | Nathaniel Lowe | 39 | 127 | 114 | 31 | 8 | 23 | 15 | 0 | .272 | .346 | .561 | .907 | 10.2% | 24.4% | 0.9 |
 | Spencer Steer | 51 | 201 | 181 | 49 | 7 | 21 | 30 | 3 | .271 | .338 | .442 | .780 | 8.0% | 19.9% | 0.5 |
 | Blake Dunn | 14 | 45 | 41 | 13 | 1 | 2 | 9 | 2 | .317 | .378 | .488 | .866 | 6.7% | 22.2% | 0.5 |
@@ -71,14 +71,32 @@
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Elly De La Cruz | SS | 51 | 51 | 451.1 | 72 | 119 | 4 | .979 |
 | P.J. Higgins | C | 7 | 6 | 56.0 | 38 | 2 | 3 | .930 |
-| Ke'Bryan Hayes | 3B | 44 | 37 | 325.1 | 30 | 72 | 2 | .981 |
 | Jose Trevino | C | 11 | 10 | 83.0 | 82 | 3 | 2 | .977 |
-| Spencer Steer | 1B | 22 | 13 | 123.2 | 105 | 4 | 1 | .991 |
-| Will Benson | RF | 27 | 21 | 165.2 | 48 | 0 | 1 | .980 |
-| Spencer Steer | LF | 26 | 25 | 191.0 | 44 | 0 | 1 | .978 |
+| Ke'Bryan Hayes | 3B | 44 | 37 | 325.1 | 30 | 72 | 2 | .981 |
 | TJ Friedl | LF | 26 | 3 | 74.0 | 20 | 0 | 1 | .952 |
 | Eugenio Suárez | 3B | 8 | 7 | 56.0 | 6 | 8 | 1 | .933 |
+| Spencer Steer | 1B | 22 | 13 | 123.2 | 105 | 4 | 1 | .991 |
+| Spencer Steer | LF | 26 | 25 | 191.0 | 44 | 0 | 1 | .978 |
+| Will Benson | RF | 27 | 21 | 165.2 | 48 | 0 | 1 | .980 |
 | Tyler Stephenson | C | 42 | 37 | 335.1 | 300 | 17 | 1 | .997 |
+| Will Benson | CF | 2 | 1 | 11.0 | 4 | 0 | 0 | 1.000 |
+| Will Benson | LF | 7 | 3 | 27.0 | 3 | 0 | 0 | 1.000 |
+| Blake Dunn | CF | 5 | 4 | 28.0 | 6 | 0 | 0 | 1.000 |
+| JJ Bleday | LF | 22 | 22 | 182.1 | 38 | 0 | 0 | 1.000 |
+| Dane Myers | CF | 40 | 12 | 176.1 | 50 | 0 | 0 | 1.000 |
+| Blake Dunn | RF | 10 | 5 | 59.0 | 11 | 0 | 0 | 1.000 |
+| Noelvi Marte | RF | 10 | 9 | 75.0 | 14 | 0 | 0 | 1.000 |
+| TJ Friedl | CF | 37 | 36 | 259.0 | 86 | 1 | 0 | 1.000 |
+| Rece Hinds | RF | 10 | 9 | 81.0 | 26 | 0 | 0 | 1.000 |
+| Nathaniel Lowe | 1B | 10 | 6 | 55.0 | 39 | 3 | 0 | 1.000 |
+| Sal Stewart | 3B | 15 | 9 | 89.0 | 8 | 17 | 0 | 1.000 |
+| Spencer Steer | RF | 15 | 9 | 91.2 | 23 | 1 | 0 | 1.000 |
+| Sal Stewart | 1B | 40 | 34 | 295.2 | 260 | 13 | 0 | 1.000 |
+| Sal Stewart | 2B | 5 | 5 | 37.0 | 11 | 11 | 0 | 1.000 |
+| Spencer Steer | 2B | 3 | 2 | 20.0 | 7 | 5 | 0 | 1.000 |
+| Matt McLain | 2B | 49 | 46 | 417.1 | 82 | 123 | 0 | 1.000 |
+| Matt McLain | SS | 4 | 2 | 23.0 | 1 | 6 | 0 | 1.000 |
+| Will Benson | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
 | JJ Bleday | RF | 1 | 0 | 2.0 | 0 | 0 | 0 | .000 |
 | JJ Bleday | DH | 3 | 3 | 0.0 | 0 | 0 | 0 | .000 |
 | Elly De La Cruz | DH | 2 | 2 | 0.0 | 0 | 0 | 0 | .000 |
@@ -86,24 +104,6 @@
 | Nathaniel Lowe | DH | 24 | 24 | 0.0 | 0 | 0 | 0 | .000 |
 | Spencer Steer | 3B | 2 | 0 | 4.0 | 0 | 0 | 0 | .000 |
 | Sal Stewart | DH | 5 | 5 | 0.0 | 0 | 0 | 0 | .000 |
-| Will Benson | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
-| Will Benson | LF | 7 | 3 | 27.0 | 3 | 0 | 0 | 1.000 |
-| Will Benson | CF | 2 | 1 | 11.0 | 4 | 0 | 0 | 1.000 |
-| Noelvi Marte | RF | 10 | 9 | 75.0 | 14 | 0 | 0 | 1.000 |
-| JJ Bleday | LF | 22 | 22 | 182.1 | 38 | 0 | 0 | 1.000 |
-| Blake Dunn | CF | 5 | 4 | 28.0 | 6 | 0 | 0 | 1.000 |
-| Blake Dunn | RF | 10 | 5 | 59.0 | 11 | 0 | 0 | 1.000 |
-| TJ Friedl | CF | 37 | 36 | 259.0 | 86 | 1 | 0 | 1.000 |
-| Rece Hinds | RF | 10 | 9 | 81.0 | 26 | 0 | 0 | 1.000 |
-| Nathaniel Lowe | 1B | 10 | 6 | 55.0 | 39 | 3 | 0 | 1.000 |
-| Matt McLain | 2B | 49 | 46 | 417.1 | 82 | 123 | 0 | 1.000 |
-| Sal Stewart | 3B | 15 | 9 | 89.0 | 8 | 17 | 0 | 1.000 |
-| Matt McLain | SS | 4 | 2 | 23.0 | 1 | 6 | 0 | 1.000 |
-| Dane Myers | CF | 40 | 12 | 176.1 | 50 | 0 | 0 | 1.000 |
-| Spencer Steer | 2B | 3 | 2 | 20.0 | 7 | 5 | 0 | 1.000 |
-| Spencer Steer | RF | 15 | 9 | 91.2 | 23 | 1 | 0 | 1.000 |
-| Sal Stewart | 1B | 40 | 34 | 295.2 | 260 | 13 | 0 | 1.000 |
-| Sal Stewart | 2B | 5 | 5 | 37.0 | 11 | 11 | 0 | 1.000 |
 | Eugenio Suárez | DH | 20 | 19 | 0.0 | 0 | 0 | 0 | .000 |
 
 ---
