@@ -1,6 +1,6 @@
 # 🔴 Cincinnati Reds Stats Tracker — 2026
 
-> **Last updated:** 2026-06-17 09:00 UTC
+> **Last updated:** 2026-06-17 16:38 UTC
 > Data sources: [MLB Stats API](https://statsapi.mlb.com) · [Baseball-Reference](https://www.baseball-reference.com)
 > **bWAR** = Baseball-Reference WAR
 
@@ -77,22 +77,35 @@
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | P.J. Higgins | C | 13 | 9 | 85.0 | 61 | 6 | 4 | .944 |
 | Elly De La Cruz | SS | 56 | 56 | 491.1 | 81 | 129 | 4 | .981 |
-| Jose Trevino | C | 12 | 11 | 92.0 | 89 | 4 | 2 | .979 |
 | Ke'Bryan Hayes | 3B | 44 | 37 | 325.1 | 30 | 72 | 2 | .981 |
-| Spencer Steer | RF | 19 | 13 | 123.2 | 29 | 1 | 1 | .968 |
-| Eugenio Suárez | 3B | 18 | 17 | 142.0 | 11 | 21 | 1 | .970 |
-| Spencer Steer | 2B | 11 | 10 | 85.0 | 16 | 22 | 1 | .974 |
+| Jose Trevino | C | 12 | 11 | 92.0 | 89 | 4 | 2 | .979 |
+| Nathaniel Lowe | 1B | 19 | 14 | 120.0 | 91 | 6 | 1 | .990 |
+| Will Benson | RF | 31 | 24 | 192.2 | 57 | 0 | 1 | .983 |
+| Tyler Stephenson | C | 58 | 52 | 466.0 | 434 | 21 | 1 | .998 |
+| Spencer Steer | 1B | 32 | 17 | 169.1 | 141 | 5 | 1 | .993 |
 | Sal Stewart | 3B | 26 | 18 | 171.2 | 11 | 33 | 1 | .978 |
 | Spencer Steer | LF | 27 | 26 | 201.0 | 45 | 0 | 1 | .978 |
-| Edwin Arroyo | SS | 3 | 2 | 18.0 | 2 | 6 | 1 | .889 |
-| Matt McLain | SS | 17 | 14 | 133.2 | 18 | 31 | 1 | .980 |
-| Will Benson | RF | 31 | 24 | 192.2 | 57 | 0 | 1 | .983 |
-| Nathaniel Lowe | 1B | 19 | 14 | 120.0 | 91 | 6 | 1 | .990 |
-| Spencer Steer | 1B | 32 | 17 | 169.1 | 141 | 5 | 1 | .993 |
-| Sal Stewart | 1B | 47 | 41 | 353.2 | 305 | 15 | 1 | .997 |
-| Tyler Stephenson | C | 58 | 52 | 466.0 | 434 | 21 | 1 | .998 |
 | Blake Dunn | LF | 2 | 2 | 17.0 | 5 | 0 | 1 | .833 |
+| Edwin Arroyo | SS | 3 | 2 | 18.0 | 2 | 6 | 1 | .889 |
+| Spencer Steer | 2B | 11 | 10 | 85.0 | 16 | 22 | 1 | .974 |
+| Matt McLain | SS | 17 | 14 | 133.2 | 18 | 31 | 1 | .980 |
+| Eugenio Suárez | 3B | 18 | 17 | 142.0 | 11 | 21 | 1 | .970 |
 | TJ Friedl | LF | 26 | 3 | 74.0 | 20 | 0 | 1 | .952 |
+| Spencer Steer | RF | 19 | 13 | 123.2 | 29 | 1 | 1 | .968 |
+| Sal Stewart | 1B | 47 | 41 | 353.2 | 305 | 15 | 1 | .997 |
+| Will Benson | LF | 7 | 3 | 27.0 | 3 | 0 | 0 | 1.000 |
+| Edwin Arroyo | 2B | 11 | 8 | 75.2 | 8 | 23 | 0 | 1.000 |
+| Rece Hinds | RF | 10 | 9 | 81.0 | 26 | 0 | 0 | 1.000 |
+| TJ Friedl | CF | 40 | 39 | 281.0 | 93 | 1 | 0 | 1.000 |
+| Blake Dunn | RF | 16 | 10 | 108.0 | 29 | 1 | 0 | 1.000 |
+| Blake Dunn | CF | 16 | 14 | 112.0 | 35 | 0 | 0 | 1.000 |
+| JJ Bleday | LF | 38 | 38 | 324.0 | 79 | 1 | 0 | 1.000 |
+| Will Benson | CF | 3 | 1 | 12.0 | 5 | 0 | 0 | 1.000 |
+| Noelvi Marte | RF | 18 | 16 | 135.2 | 31 | 0 | 0 | 1.000 |
+| Noelvi Marte | CF | 1 | 1 | 8.0 | 1 | 0 | 0 | 1.000 |
+| Dane Myers | CF | 49 | 17 | 230.0 | 66 | 0 | 0 | 1.000 |
+| Sal Stewart | 2B | 6 | 5 | 38.0 | 11 | 11 | 0 | 1.000 |
+| Matt McLain | 2B | 52 | 49 | 444.1 | 83 | 130 | 0 | 1.000 |
 | Will Benson | DH | 2 | 0 | 0.0 | 0 | 0 | 0 | .000 |
 | JJ Bleday | RF | 1 | 0 | 2.0 | 0 | 0 | 0 | .000 |
 | JJ Bleday | DH | 6 | 6 | 0.0 | 0 | 0 | 0 | .000 |
@@ -103,19 +116,6 @@
 | Spencer Steer | 3B | 2 | 0 | 4.0 | 0 | 0 | 0 | .000 |
 | Spencer Steer | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
 | Sal Stewart | DH | 8 | 8 | 0.0 | 0 | 0 | 0 | .000 |
-| Edwin Arroyo | 2B | 11 | 8 | 75.2 | 8 | 23 | 0 | 1.000 |
-| Will Benson | LF | 7 | 3 | 27.0 | 3 | 0 | 0 | 1.000 |
-| Sal Stewart | 2B | 6 | 5 | 38.0 | 11 | 11 | 0 | 1.000 |
-| Dane Myers | CF | 49 | 17 | 230.0 | 66 | 0 | 0 | 1.000 |
-| Matt McLain | 2B | 52 | 49 | 444.1 | 83 | 130 | 0 | 1.000 |
-| Noelvi Marte | RF | 18 | 16 | 135.2 | 31 | 0 | 0 | 1.000 |
-| Noelvi Marte | CF | 1 | 1 | 8.0 | 1 | 0 | 0 | 1.000 |
-| Rece Hinds | RF | 10 | 9 | 81.0 | 26 | 0 | 0 | 1.000 |
-| TJ Friedl | CF | 40 | 39 | 281.0 | 93 | 1 | 0 | 1.000 |
-| Blake Dunn | RF | 16 | 10 | 108.0 | 29 | 1 | 0 | 1.000 |
-| Blake Dunn | CF | 16 | 14 | 112.0 | 35 | 0 | 0 | 1.000 |
-| JJ Bleday | LF | 38 | 38 | 324.0 | 79 | 1 | 0 | 1.000 |
-| Will Benson | CF | 3 | 1 | 12.0 | 5 | 0 | 0 | 1.000 |
 | Eugenio Suárez | DH | 28 | 27 | 0.0 | 0 | 0 | 0 | .000 |
 
 ---
