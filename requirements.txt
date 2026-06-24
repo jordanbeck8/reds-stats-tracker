@@ -1,3 +1,11 @@
-pybaseball>=2.2.7
-pandas>=2.0.0
-requests>=2.28.0
+# RST-003: Exact-pinned versions replacing >= specifiers.
+# pip-compile --generate-hashes was unavailable in the audit environment (no pip-tools,
+# system Python is externally managed). Switched to == pins as the next-best option;
+# hash pinning should be added in a follow-up once pip-tools/pip-compile is available
+# in the CI environment (add `pip install --require-hashes -r requirements.txt` in workflow).
+#
+# requests pinned at 2.32.3 (latest stable; avoids CVE-2023-32681 present in <2.31.0).
+# pybaseball and pandas pinned at their current latest stable releases.
+pybaseball==2.2.7
+pandas==2.2.3
+requests==2.32.3
