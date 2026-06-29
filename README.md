@@ -1,6 +1,6 @@
 # 🔴 Cincinnati Reds Stats Tracker — 2026
 
-> **Last updated:** 2026-06-29 09:00 UTC
+> **Last updated:** 2026-06-29 16:38 UTC
 > Data sources: [MLB Stats API](https://statsapi.mlb.com) · [Baseball-Reference](https://www.baseball-reference.com)
 > **bWAR** = Baseball-Reference WAR
 
@@ -78,27 +78,39 @@
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Elly De La Cruz | SS | 61 | 61 | 535.1 | 87 | 138 | 5 | .978 |
 | P.J. Higgins | C | 13 | 9 | 85.0 | 61 | 6 | 4 | .944 |
+| Matt McLain | SS | 22 | 18 | 171.2 | 23 | 43 | 3 | .957 |
 | Jose Trevino | C | 17 | 15 | 130.0 | 129 | 5 | 3 | .978 |
 | Edwin Arroyo | 2B | 19 | 14 | 132.2 | 20 | 37 | 3 | .950 |
-| Matt McLain | SS | 22 | 18 | 171.2 | 23 | 43 | 3 | .957 |
-| Eugenio Suárez | 3B | 23 | 22 | 187.0 | 16 | 27 | 2 | .956 |
 | Ke'Bryan Hayes | 3B | 44 | 37 | 325.1 | 30 | 72 | 2 | .981 |
-| Blake Dunn | LF | 3 | 3 | 23.0 | 6 | 0 | 1 | .857 |
-| TJ Friedl | LF | 26 | 3 | 74.0 | 20 | 0 | 1 | .952 |
-| Spencer Steer | RF | 22 | 16 | 148.2 | 35 | 1 | 1 | .973 |
-| Spencer Steer | 2B | 13 | 12 | 102.0 | 18 | 25 | 1 | .977 |
-| Spencer Steer | LF | 27 | 26 | 201.0 | 45 | 0 | 1 | .978 |
-| Will Benson | RF | 31 | 24 | 192.2 | 57 | 0 | 1 | .983 |
-| Sal Stewart | 3B | 31 | 23 | 215.2 | 15 | 44 | 1 | .983 |
+| Eugenio Suárez | 3B | 23 | 22 | 187.0 | 16 | 27 | 2 | .956 |
+| Tyler Stephenson | C | 64 | 58 | 517.0 | 492 | 23 | 1 | .998 |
 | Nathaniel Lowe | 1B | 21 | 16 | 133.0 | 105 | 6 | 1 | .991 |
+| Will Benson | RF | 31 | 24 | 192.2 | 57 | 0 | 1 | .983 |
+| Spencer Steer | 2B | 13 | 12 | 102.0 | 18 | 25 | 1 | .977 |
+| Edwin Arroyo | SS | 4 | 3 | 25.0 | 3 | 7 | 1 | .909 |
+| TJ Friedl | LF | 26 | 3 | 74.0 | 20 | 0 | 1 | .952 |
+| Blake Dunn | LF | 3 | 3 | 23.0 | 6 | 0 | 1 | .857 |
+| Sal Stewart | 3B | 31 | 23 | 215.2 | 15 | 44 | 1 | .983 |
+| Spencer Steer | RF | 22 | 16 | 148.2 | 35 | 1 | 1 | .973 |
+| Spencer Steer | LF | 27 | 26 | 201.0 | 45 | 0 | 1 | .978 |
 | Spencer Steer | 1B | 38 | 20 | 202.1 | 167 | 7 | 1 | .994 |
 | Sal Stewart | 1B | 52 | 46 | 396.2 | 331 | 20 | 1 | .997 |
-| Tyler Stephenson | C | 64 | 58 | 517.0 | 492 | 23 | 1 | .998 |
-| Edwin Arroyo | SS | 4 | 3 | 25.0 | 3 | 7 | 1 | .909 |
+| JJ Bleday | LF | 48 | 47 | 407.0 | 88 | 1 | 0 | 1.000 |
+| Will Benson | CF | 3 | 1 | 12.0 | 5 | 0 | 0 | 1.000 |
+| Will Benson | LF | 7 | 3 | 27.0 | 3 | 0 | 0 | 1.000 |
+| Noelvi Marte | CF | 2 | 2 | 16.0 | 2 | 0 | 0 | 1.000 |
+| Rece Hinds | RF | 10 | 9 | 81.0 | 26 | 0 | 0 | 1.000 |
+| TJ Friedl | CF | 41 | 40 | 289.0 | 93 | 1 | 0 | 1.000 |
+| Blake Dunn | RF | 16 | 10 | 108.0 | 29 | 1 | 0 | 1.000 |
+| Blake Dunn | CF | 22 | 20 | 162.0 | 53 | 0 | 0 | 1.000 |
+| Dane Myers | CF | 53 | 19 | 253.0 | 75 | 0 | 0 | 1.000 |
+| Matt McLain | 2B | 54 | 51 | 459.1 | 86 | 134 | 0 | 1.000 |
+| Noelvi Marte | RF | 26 | 23 | 199.2 | 46 | 0 | 0 | 1.000 |
+| Sal Stewart | 2B | 6 | 5 | 38.0 | 11 | 11 | 0 | 1.000 |
+| Will Benson | DH | 2 | 0 | 0.0 | 0 | 0 | 0 | .000 |
 | JJ Bleday | RF | 1 | 0 | 2.0 | 0 | 0 | 0 | .000 |
 | JJ Bleday | DH | 6 | 6 | 0.0 | 0 | 0 | 0 | .000 |
 | Elly De La Cruz | DH | 2 | 2 | 0.0 | 0 | 0 | 0 | .000 |
-| Will Benson | DH | 2 | 0 | 0.0 | 0 | 0 | 0 | .000 |
 | Blake Dunn | DH | 2 | 0 | 0.0 | 0 | 0 | 0 | .000 |
 | Nathaniel Lowe | DH | 36 | 35 | 0.0 | 0 | 0 | 0 | .000 |
 | Noelvi Marte | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
@@ -106,18 +118,6 @@
 | Spencer Steer | 3B | 2 | 0 | 4.0 | 0 | 0 | 0 | .000 |
 | Spencer Steer | DH | 1 | 0 | 0.0 | 0 | 0 | 0 | .000 |
 | Sal Stewart | DH | 8 | 8 | 0.0 | 0 | 0 | 0 | .000 |
-| Will Benson | LF | 7 | 3 | 27.0 | 3 | 0 | 0 | 1.000 |
-| Will Benson | CF | 3 | 1 | 12.0 | 5 | 0 | 0 | 1.000 |
-| Sal Stewart | 2B | 6 | 5 | 38.0 | 11 | 11 | 0 | 1.000 |
-| Dane Myers | CF | 53 | 19 | 253.0 | 75 | 0 | 0 | 1.000 |
-| Matt McLain | 2B | 54 | 51 | 459.1 | 86 | 134 | 0 | 1.000 |
-| Noelvi Marte | RF | 26 | 23 | 199.2 | 46 | 0 | 0 | 1.000 |
-| Noelvi Marte | CF | 2 | 2 | 16.0 | 2 | 0 | 0 | 1.000 |
-| Rece Hinds | RF | 10 | 9 | 81.0 | 26 | 0 | 0 | 1.000 |
-| TJ Friedl | CF | 41 | 40 | 289.0 | 93 | 1 | 0 | 1.000 |
-| Blake Dunn | RF | 16 | 10 | 108.0 | 29 | 1 | 0 | 1.000 |
-| Blake Dunn | CF | 22 | 20 | 162.0 | 53 | 0 | 0 | 1.000 |
-| JJ Bleday | LF | 48 | 47 | 407.0 | 88 | 1 | 0 | 1.000 |
 | Eugenio Suárez | DH | 32 | 31 | 0.0 | 0 | 0 | 0 | .000 |
 
 ---
