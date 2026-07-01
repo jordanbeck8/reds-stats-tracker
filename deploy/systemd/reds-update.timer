@@ -1,0 +1,10 @@
+[Unit]
+Description=Nightly Reds stats update (00:05 ET)
+
+[Timer]
+OnCalendar=*-*-* 00:05:00 America/New_York
+Persistent=true
+RandomizedDelaySec=120
+
+[Install]
+WantedBy=timers.target

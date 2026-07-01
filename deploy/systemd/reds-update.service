@@ -1,0 +1,12 @@
+[Unit]
+Description=Reds stats update — fetch, build, publish, push
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/apps/reds-stats-tracker/deploy/update.sh
+WorkingDirectory=%h/apps/reds-stats-tracker
+TimeoutStartSec=30min
+Nice=10
+MemoryMax=1500M

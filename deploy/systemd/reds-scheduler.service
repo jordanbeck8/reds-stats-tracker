@@ -1,0 +1,10 @@
+[Unit]
+Description=Reds post-game scheduler — arms one-shot timers at game start +3h
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.bun/bin/bun %h/apps/reds-stats-tracker/deploy/scheduler.ts
+WorkingDirectory=%h/apps/reds-stats-tracker
+TimeoutStartSec=2min
