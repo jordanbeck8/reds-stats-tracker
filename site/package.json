@@ -1,0 +1,13 @@
+{
+  "name": "reds-dashboard",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "observable preview",
+    "build": "observable build",
+    "clean": "observable clean"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1.13.0"
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "bat_2026": [
+    {
+      "Name": "Elly De La Cruz",
+      "fWAR": 2.444971954343007,
+      "player_id": 682829
+    },
+    {
+      "Name": "Sal Stewart",
+      "fWAR": 1.6140605716069123,
+      "player_id": 701398
+    },
+    {
+      "Name": "JJ Bleday",
+      "fWAR": 1.1384193075484612,
+      "player_id": 668709
+    },
+    {
+      "Name": "Blake Dunn",
+      "fWAR": 0.6141308935713009,
+      "player_id": 694362
+    },
+    {
+      "Name": "Dane Myers",
+      "fWAR": 0.4590839762204061,
+      "player_id": 667472
+    },
+    {
+      "Name": "Spencer Steer",
+      "fWAR": 0.4432389801165516,
+      "player_id": 668715
+    },
+    {
+      "Name": "Nathaniel Lowe",
+      "fWAR": 0.3640876493835179,
+      "player_id": 663993
+    },
+    {
+      "Name": "Matt McLain",
+      "fWAR": 0.28097820418068975,
+      "player_id": 680574
+    },
+    {
+      "Name": "Edwin Arroyo",
+      "fWAR": 0.0951250092660545,
+      "player_id": 695490
+    },
+    {
+      "Name": "Tyler Stephenson",
+      "fWAR": 0.09342320376616947,
+      "player_id": 663886
+    },
+    {
+      "Name": "Pierce Johnson",
+      "fWAR": 0.0,
+      "player_id": 572955
+    },
+    {
+      "Name": "Yunior Marte",
+      "fWAR": 0.0,
+      "player_id": 628708
+    },
+    {
+      "Name": "Emilio Pag\u00e1n",
+      "fWAR": 0.0,
+      "player_id": 641941
+    },
+    {
+      "Name": "Sam Moll",
+      "fWAR": 0.0,
+      "player_id": 594580
+    },
+    {
+      "Name": "Brandon Leibrandt",
+      "fWAR": 0.0,
+      "player_id": 605335
+    },
+    {
+      "Name": "Tejay Antone",
+      "fWAR": 0.0,
+      "player_id": 622088
+    },
+    {
+      "Name": "Brock Burke",
+      "fWAR": 0.0,
+      "player_id": 656271
+    },
+    {
+      "Name": "Caleb Ferguson",
+      "fWAR": 0.0,
+      "player_id": 657571
+    },
+    {
+      "Name": "Tony Santillan",
+      "fWAR": 0.0,
+      "player_id": 663574
+    },
+    {
+      "Name": "Chris Paddack",
+      "fWAR": 0.0,
+      "player_id": 663978
+    },
+    {
+      "Name": "Julian Garcia",
+      "fWAR": 0.0,
+      "player_id": 670062
+    },
+    {
+      "Name": "Lyon Richardson",
+      "fWAR": 0.0,
+      "player_id": 680689
+    },
+    {
+      "Name": "Brady Singer",
+      "fWAR": 0.0,
+      "player_id": 663903
+    },
+    {
+      "Name": "Brandon Williamson",
+      "fWAR": 0.0,
+      "player_id": 682227
+    },
+    {
+      "Name": "Luis Mey",
+      "fWAR": 0.0,
+      "player_id": 682825
+    },
+    {
+      "Name": "Nick Lodolo",
+      "fWAR": 0.0,
+      "player_id": 666157
+    },
+    {
+      "Name": "Jose Franco",
+      "fWAR": 0.0,
+      "player_id": 683742
+    },
+    {
+      "Name": "Graham Ashcraft",
+      "fWAR": 0.0,
+      "player_id": 668933
+    },
+    {
+      "Name": "Connor Phillips",
+      "fWAR": 0.0,
+      "player_id": 683175
+    },
+    {
+      "Name": "Zach McCambley",
+      "fWAR": 0.0,
+      "player_id": 685112
+    },
+    {
+      "Name": "Kyle Nicolas",
+      "fWAR": 0.0,
+      "player_id": 693312
+    },
+    {
+      "Name": "Andrew Abbott",
+      "fWAR": 0.0,
+      "player_id": 671096
+    },
+    {
+      "Name": "Chase Petty",
+      "fWAR": 0.0,
+      "player_id": 695534
+    },
+    {
+      "Name": "Zach Maxwell",
+      "fWAR": 0.0,
+      "player_id": 687209
+    },
+    {
+      "Name": "Rhett Lowder",
+      "fWAR": 0.0,
+      "player_id": 695076
+    },
+    {
+      "Name": "Chase Burns",
+      "fWAR": 0.0,
+      "player_id": 695505
+    },
+    {
+      "Name": "Ivan Johnson",
+      "fWAR": -0.02336311123048785,
+      "player_id": 671155
+    },
+    {
+      "Name": "P.J. Higgins",
+      "fWAR": -0.03154951052159337,
+      "player_id": 664731
+    },
+    {
+      "Name": "Jose Trevino",
+      "fWAR": -0.1565053956135754,
+      "player_id": 624431
+    },
+    {
+      "Name": "Will Benson",
+      "fWAR": -0.16728538615725594,
+      "player_id": 666181
+    },
+    {
+      "Name": "Rece Hinds",
+      "fWAR": -0.33272500609371,
+      "player_id": 677956
+    },
+    {
+      "Name": "Noelvi Marte",
+      "fWAR": -0.3733444765272481,
+      "player_id": 682622
+    },
+    {
+      "Name": "Eugenio Su\u00e1rez",
+      "fWAR": -0.7420209043572479,
+      "player_id": 553993
+    },
+    {
+      "Name": "TJ Friedl",
+      "fWAR": -0.779980224423087,
+      "player_id": 670770
+    },
+    {
+      "Name": "Ke'Bryan Hayes",
+      "fWAR": -0.8631009883699146,
+      "player_id": 663647
+    }
+  ],
+  "pitch_2026": [
+    {
+      "Name": "Chase Burns",
+      "fWAR": 2.8002564907073975,
+      "player_id": 695505
+    },
+    {
+      "Name": "Rhett Lowder",
+      "fWAR": 0.7770383358001709,
+      "player_id": 695076
+    },
+    {
+      "Name": "Andrew Abbott",
+      "fWAR": 0.7333258390426636,
+      "player_id": 671096
+    },
+    {
+      "Name": "Graham Ashcraft",
+      "fWAR": 0.3834537863731384,
+      "player_id": 668933
+    },
+    {
+      "Name": "Caleb Ferguson",
+      "fWAR": 0.2798498570919037,
+      "player_id": 657571
+    },
+    {
+      "Name": "Brock Burke",
+      "fWAR": 0.23211807012557983,
+      "player_id": 656271
+    },
+    {
+      "Name": "Tejay Antone",
+      "fWAR": 0.22976918518543243,
+      "player_id": 622088
+    },
+    {
+      "Name": "Nick Lodolo",
+      "fWAR": 0.19766153395175934,
+      "player_id": 666157
+    },
+    {
+      "Name": "Chris Paddack",
+      "fWAR": 0.1714188694022596,
+      "player_id": 663978
+    },
+    {
+      "Name": "Sam Moll",
+      "fWAR": 0.09026940912008286,
+      "player_id": 594580
+    },
+    {
+      "Name": "P.J. Higgins",
+      "fWAR": 0.018487175926566124,
+      "player_id": 664731
+    },
+    {
+      "Name": "Jose Trevino",
+      "fWAR": 0.015887171030044556,
+      "player_id": 624431
+    },
+    {
+      "Name": "Zach McCambley",
+      "fWAR": -0.030118828639388084,
+      "player_id": 685112
+    },
+    {
+      "Name": "Yunior Marte",
+      "fWAR": -0.03589441254734993,
+      "player_id": 628708
+    },
+    {
+      "Name": "Julian Garcia",
+      "fWAR": -0.036575209349393845,
+      "player_id": 670062
+    },
+    {
+      "Name": "Brandon Williamson",
+      "fWAR": -0.039962053298950195,
+      "player_id": 682227
+    },
+    {
+      "Name": "Brady Singer",
+      "fWAR": -0.05103788524866104,
+      "player_id": 663903
+    },
+    {
+      "Name": "Pierce Johnson",
+      "fWAR": -0.05340313911437988,
+      "player_id": 572955
+    },
+    {
+      "Name": "Brandon Leibrandt",
+      "fWAR": -0.11356332153081894,
+      "player_id": 605335
+    },
+    {
+      "Name": "Emilio Pag\u00e1n",
+      "fWAR": -0.15979130566120148,
+      "player_id": 641941
+    },
+    {
+      "Name": "Chase Petty",
+      "fWAR": -0.1625915765762329,
+      "player_id": 695534
+    },
+    {
+      "Name": "Kyle Nicolas",
+      "fWAR": -0.16843916475772858,
+      "player_id": 693312
+    },
+    {
+      "Name": "Luis Mey",
+      "fWAR": -0.17413674294948578,
+      "player_id": 682825
+    },
+    {
+      "Name": "Lyon Richardson",
+      "fWAR": -0.19147509336471558,
+      "player_id": 680689
+    },
+    {
+      "Name": "Jose Franco",
+      "fWAR": -0.20945614576339722,
+      "player_id": 683742
+    },
+    {
+      "Name": "Connor Phillips",
+      "fWAR": -0.30267027020454407,
+      "player_id": 683175
+    },
+    {
+      "Name": "Zach Maxwell",
+      "fWAR": -0.3555906414985657,
+      "player_id": 687209
+    },
+    {
+      "Name": "Tony Santillan",
+      "fWAR": -0.7553281784057617,
+      "player_id": 663574
+    }
+  ]
+}
