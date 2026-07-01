@@ -1,0 +1,114 @@
+@import url("observablehq:default.css");
+
+/* Reds palette — red #C6011F, black, white; Montserrat as the
+   Proxima Nova stand-in (matches mlb.com's verified font stack intent).
+   @font-face lives in the config `head` — the CSS bundler can't resolve
+   font URLs, and head HTML passes through untouched. */
+
+:root {
+  --reds-red: #c6011f;
+  --reds-black: #000000;
+  --theme-foreground-focus: var(--reds-red);
+  --theme-foreground-alt: var(--reds-black);
+  --sans-serif: "Montserrat", "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--sans-serif);
+}
+
+h1, h2, h3 {
+  font-family: var(--sans-serif);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  color: var(--reds-red);
+  text-transform: uppercase;
+}
+
+#observablehq-header a[href] {
+  color: var(--reds-red);
+}
+
+#observablehq-sidebar .observablehq-link-active a {
+  color: var(--reds-red);
+}
+
+/* --- calendar bar ------------------------------------------------------- */
+
+.cal-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  background: var(--reds-black);
+  border-bottom: 3px solid var(--reds-red);
+  margin: 0 0 1.5rem 0;
+  scrollbar-width: thin;
+}
+
+.cal-game {
+  flex: 0 0 auto;
+  min-width: 92px;
+  padding: 8px 10px;
+  border-right: 1px solid #2a2a2a;
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.45;
+  text-align: center;
+  font-family: var(--sans-serif);
+}
+
+.cal-game .cal-date {
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.cal-game .cal-opp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.cal-game .cal-opp img {
+  width: 18px;
+  height: 18px;
+}
+
+.cal-game .cal-result { font-weight: 600; }
+.cal-game .cal-result.win { color: #4ade80; }
+.cal-game .cal-result.loss { color: #f87171; }
+.cal-game .cal-result.upcoming { color: #ccc; }
+
+.cal-game.cal-today {
+  border: 2px solid var(--reds-red);
+  background: #1a0005;
+}
+
+/* --- stat cards / tables ------------------------------------------------ */
+
+.war-card {
+  border: 1px solid var(--theme-foreground-faintest);
+  border-top: 4px solid var(--reds-red);
+  border-radius: 6px;
+  padding: 12px 16px;
+  min-width: 150px;
+}
+
+.war-card .war-name { font-weight: 800; font-size: 14px; }
+.war-card .war-values { font-size: 22px; font-weight: 800; color: var(--reds-red); }
+.war-card .war-label { font-size: 10px; color: var(--theme-foreground-muted); text-transform: uppercase; }
+
+.compare-table td.best {
+  color: var(--reds-red);
+  font-weight: 800;
+}

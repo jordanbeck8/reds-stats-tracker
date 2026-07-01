@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "observable preview",
-    "build": "observable build",
+    "build": "observable build && cp -R src/fonts dist/fonts",
     "clean": "observable clean"
   },
   "dependencies": {
