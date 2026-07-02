@@ -25,9 +25,9 @@ const defaults = [...pool].sort((a, b) => (b.bWAR ?? -9) - (a.bWAR ?? -9)).slice
 ```
 
 ```js
-const names = view(Inputs.select(
+const names = view(Inputs.checkbox(
   [...byName.keys()].sort(),
-  {multiple: 6, value: defaults, label: "Players (pick 2+)", width: 320}
+  {value: defaults, label: "Players (pick 2+)", className: "player-picker"}
 ));
 ```
 

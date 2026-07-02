@@ -33,7 +33,7 @@ const topDefault = groupRows
 ```
 
 ```js
-const selected = view(Inputs.select(playerNames, {multiple: 5, value: topDefault, label: "Players"}));
+const selected = view(Inputs.checkbox(playerNames, {value: topDefault, label: "Players", className: "player-picker"}));
 ```
 
 ```js
